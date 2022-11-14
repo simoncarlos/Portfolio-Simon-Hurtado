@@ -1,0 +1,33 @@
+@font-face {
+  font-family: dutch;
+  src: url("fonts/dutch_809_bold_bt.ttf");
+}
+@font-face {
+  font-family: openSans;
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: grotesk;
+  src: url("fonts/ReferenzGrotesk-Light.otf");
+}
+@font-face {
+  font-family: calibre;
+  src: url("fonts/CalibreBold.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: calibre;
+  src: url("fonts/CalibreRegular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: SFmono;
+  src: url("fonts/SFMonoMedium.otf");
+  font-weight: 500;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
