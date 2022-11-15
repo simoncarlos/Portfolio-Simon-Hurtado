@@ -1,14 +1,20 @@
 import { Title } from "../StyledComponents/Title";
 import { Small } from "../StyledComponents/Small";
 import { Text } from "../StyledComponents/Text";
+import NavBar from "../NavBar/NavBar";
+
 
 const Header = () => {
     return(
         <header>
-            <Small size="1.2rem" >¡Hola! Yo soy..</Small>
-            <Title size="3rem" >Carlos Diego Simon Hurtado</Title>
+            <NavBar/>
+            <Small size="0.85rem" >¡Hola! Mi nombre es</Small>
+            <Title size="2.5rem" >Carlos Diego Simon Hurtado</Title>
+            <Title size="2.5rem" >Front-End Software Developer</Title>
             <Text size="0.8rem">
-                Soy Front-End React Developer, tengo 24 años y vivo en buenos Aires
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nemo accusantium quisquam laudantium voluptate, 
+                voluptatum dolor dolorum totam atque facilis corporis vitae quos labore inventore neque adipisci quaerat minus beatae. Excepturi?
             </Text>
         </header>
     );

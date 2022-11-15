@@ -1,6 +1,0 @@
-import styled from "styled-components";
-
-const HeaderStyled = styled.header`
-`;
-
-export { HeaderStyled } 
