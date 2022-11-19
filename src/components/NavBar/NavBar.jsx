@@ -7,28 +7,36 @@ import { BackgroundNavBarMobile } from "../StyledComponents/BackgroundNavBarMobi
 
 const NavBar = () => {
 
-    const [activeMenu, setActiveMenu] = useState(false);
-
-    const handleClick = () => {
-        setActiveMenu(!activeMenu);
-    }
+    //const [activeMenu, setActiveMenu] = useState(false);
+//
+    //const handleClick = () => {
+    //    setActiveMenu(!activeMenu);
+    //}
 
     return (
         <Nav>
             <Logo src={LogoMondrian} alt="Imagen de logo"></Logo>
-            <div className={`navLinks ${ activeMenu ? "active" : "" }`}>
+            {/*<div className={`navLinks`}>
                 <a href="">Home</a>
                 <a href="">Proyect</a>
                 <a href="">Experience</a>
                 <a href="">Contact</a>
                 <a href="">Design</a>
             </div>
-            <BurgerButton 
             active={activeMenu}
             handleClick={ handleClick }>
+            */}
+            <BurgerButton>
             </BurgerButton>
-            <BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
-            </BackgroundNavBarMobile>
+            {/*<BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
+                <div className="navLinksResponsive">
+                    <a href="">Home</a>
+                    <a href="">Proyect</a>
+                    <a href="">Experience</a>
+                    <a href="">Contact</a>
+                    <a href="">Design</a>
+                </div>
+            </BackgroundNavBarMobile>*/}
         </Nav>
     );
 };

@@ -3,20 +3,43 @@ import styled from "styled-components";
 const BackgroundNavBarMobile = styled.div`
     position: absolute;
     top: 50px;
-    left: -2000px;
-    background-color: #fcfcf4;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-right: 10px solid black;
-    transition: all 2s ease-out;
+    opacity: 0;
+    background: rgba( 252, 252, 244, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease;
     &.active{
-        top: 50px;
-        left: 0;
+        opacity: 1;
         height: calc(100% - 50px);
         width: 100%;
         z-index: 1;
-        border-right: 0px solid black
+    }
+    .navLinksResponsive{
+        margin-top: 20px;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+            font-family: calibre;
+            font-weight: 800;
+        }
     }
 `;
 

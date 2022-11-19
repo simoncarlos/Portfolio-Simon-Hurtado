@@ -31,3 +31,17 @@
   box-sizing: border-box;
   list-style: none;
 }
+:root{
+  font-size: 10px;
+}
+@media(min-width: 768px){
+  :root{
+    font-size: calc(10px * 1.15);
+  }
+}
+@media(min-width: 1024px){
+  :root{
+    font-size: calc(10px * 1.3);
+  }
+}
+
