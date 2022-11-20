@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 const Nav = styled.nav`
-    height: 50px;
+    height: 80px;
     width: 100%;
     padding: 0 20px;
     background-color: #fcfcf4;

@@ -5,11 +5,12 @@ const BurgerButtonContainer = styled.div`
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
-    height: 15px;
-    width: 20px;
+    height: 20px;
+    width: 25px;
     span{
-        height: 18%;
+        height: 16%;
         background-color: black;
+        border-radius: 5px;
         &:nth-child(0n+1){
             width: 100%;
         }

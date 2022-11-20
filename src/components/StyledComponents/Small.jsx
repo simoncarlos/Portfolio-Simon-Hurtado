@@ -9,11 +9,6 @@ const Small = styled.small`
         background-color: #ffe700;
         color: #fcfcf4;
     }
-
-    @media(min-width: 768px){
-        
-    }
-
 `;
 
 export { Small }

@@ -1,8 +1,9 @@
+import HeaderProfileContainer from "../HeaderProfileContainer/HeaderProfileContainer";
+import { HeaderStyled } from "../StyledComponents/HeaderStyled"; 
+import { Button } from "../StyledComponents/Button";
 import { Title } from "../StyledComponents/Title";
 import { Small } from "../StyledComponents/Small";
 import { Text } from "../StyledComponents/Text";
-import { HeaderStyled } from "../StyledComponents/HeaderStyled"; 
-import HeaderProfileContainer from "../HeaderProfileContainer/HeaderProfileContainer";
 
 const Header = () => {
     return(
@@ -16,8 +17,9 @@ const Header = () => {
                     Nemo accusantium quisquam laudantium voluptate, 
                     voluptatum dolor dolorum totam atque facilis corporis vitae quos labore inventore neque adipisci quaerat minus beatae. Excepturi?
                 </Text>
+                <Button>Descargar CV</Button>
             </article>
-            <HeaderProfileContainer/>
+            
         </HeaderStyled>
     );
 };

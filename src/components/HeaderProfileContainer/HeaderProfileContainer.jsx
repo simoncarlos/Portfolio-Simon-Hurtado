@@ -6,9 +6,17 @@ const HeaderProfileContainer = () => {
         <HeaderProfile>
             <div>
                 <div>
-                    <img src={profile} alt="Foto de perfil de Diego Simon" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <div>
+                        <img src={profile} alt="Foto de perfil de Diego Simon" />
+                    </div>
                 </div>    
             </div>
+            <article className="animation"></article>
         </HeaderProfile>
     );
 };

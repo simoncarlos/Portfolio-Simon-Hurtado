@@ -10,8 +10,8 @@ const apearedLine = keyframes`
 `;
 
 const Logo = styled.img`
-    height: 50px;
-    padding: 8px 20px 8px 0;
+    height: 80px;
+    padding: 15px 20px 15px 0;
     border-right: 3px solid black;
 `;
 // animation: ${apearedLine} 1s linear;

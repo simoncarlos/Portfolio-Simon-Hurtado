@@ -6,10 +6,16 @@ const HeaderStyled = styled.header`
     background-color: #fcfcf4;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding: 0 5%;
     .header-info{
-        width:52%;
+        width: 90%;
+        @media(min-width: 768px){
+            width: 80%
+        }
+        @media(min-width: 1024px){
+            width: 55%;
+        }
     }
 `;
 
