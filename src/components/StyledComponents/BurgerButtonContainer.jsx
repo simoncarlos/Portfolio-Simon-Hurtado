@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const BurgerButtonContainer = styled.div`
-    
     flex-direction: column;
     align-items: end;
     justify-content: space-between;

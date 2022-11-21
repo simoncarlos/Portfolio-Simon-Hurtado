@@ -1,19 +1,30 @@
 import styled, { keyframes } from "styled-components";
 
 const desapearAnimation = keyframes`
-    from{
-        transform: scale(1);
+    0%{
+        translate: 0;
+        opacity: 1;
     }
-    to{
-        transform: scale(0);
-        opacity: 0.1;
+    90%{
+        translate: 0;
+        opacity: 1;
+    }
+    100%{
+        translate: 0% -40%;
+        opacity: 0;
     }
 `;
 
 const Animation = styled.img`
     width: 40vw;
-    animation: ${desapearAnimation} 1.1s linear;
-    animation-delay: 5s;
+    animation: ${desapearAnimation} 5.5s linear;
+    opacity: 0;
+    @media(min-width: 768px){
+        width: 25vw
+    }
+    @media(min-width: 1024px){
+        width: 10vw;
+    }
 `;
 
 export { Animation };

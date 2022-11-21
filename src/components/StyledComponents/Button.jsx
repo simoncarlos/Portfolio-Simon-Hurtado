@@ -21,6 +21,13 @@ const Button = styled.a`
         background-color: black;
         z-index: -1;
     }
+    &:hover{
+        bottom: -8px;
+        right: -8px;
+        &::after{
+            display: none;
+        }
+    }
 `;
 
 export { Button };

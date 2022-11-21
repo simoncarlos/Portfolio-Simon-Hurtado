@@ -5,7 +5,6 @@ const Nav = styled.nav`
     width: 100%;
     padding: 0 20px;
     background-color: #fcfcf4;
-    border-bottom: 3px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;

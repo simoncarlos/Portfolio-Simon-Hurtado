@@ -10,9 +10,9 @@ const apearedLine = keyframes`
 `;
 
 const Logo = styled.img`
+    position: absolute;
     height: 80px;
     padding: 15px 20px 15px 0;
-    border-right: 3px solid black;
 `;
 // animation: ${apearedLine} 1s linear;
 export { Logo };
