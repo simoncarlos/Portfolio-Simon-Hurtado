@@ -6,7 +6,7 @@ const HeaderStyled = styled.header`
     background-color: #fcfcf4;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
     padding: 0 5%;
     .header-info{
         width: 90%;

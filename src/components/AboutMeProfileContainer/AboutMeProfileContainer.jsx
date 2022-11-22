@@ -1,9 +1,9 @@
-import { HeaderProfile } from "../StyledComponents/HeaderProfile"
+import { AboutMeProfile } from "../StyledComponents/AboutMeProfile"
 import profile from "../../assets/profile/profile.png"
 
-const HeaderProfileContainer = () => {
+const AboutMeProfileContainer = () => {
     return(
-        <HeaderProfile>
+        <AboutMeProfile>
             <div>
                 <div>
                     <span></span>
@@ -17,8 +17,8 @@ const HeaderProfileContainer = () => {
                 </div>    
             </div>
             <article className="animation"></article>
-        </HeaderProfile>
+        </AboutMeProfile>
     );
 };
 
-export default HeaderProfileContainer;
+export default AboutMeProfileContainer;

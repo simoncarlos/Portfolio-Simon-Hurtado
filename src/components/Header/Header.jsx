@@ -1,4 +1,3 @@
-import HeaderProfileContainer from "../HeaderProfileContainer/HeaderProfileContainer";
 import { HeaderStyled } from "../StyledComponents/HeaderStyled"; 
 import { Button } from "../StyledComponents/Button";
 import { Title } from "../StyledComponents/Title";
@@ -47,13 +46,13 @@ const Header = () => {
                 <Small className="apeared-small">¡Hola! Mi nombre es</Small>
                 <Title className="apeared-title">Carlos Diego Simon Hurtado <br/> Front-End Software Developer</Title>
                 <Text className="apeared-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Nemo accusantium quisquam laudantium voluptate, 
-                    voluptatum dolor dolorum totam atque facilis corporis vitae quos labore inventore neque adipisci quaerat minus beatae. Excepturi?
+                    Soy estudiante de Ingenieria en Sistemas de Información especializado en el diseño y la construcción
+                    de aplicaciones web interactivas con una excepcional experiencia de usuario.
+                    Actualmente desarrollo soluciones creativas para clientes de manera autonoma y me encuentro trabajando en
+                    multiples proyectos para mejorar mis habilidades tecnicas.
                 </Text>
                 <Button className="apeared-button">Descargar CV</Button>
             </article>
-            
         </HeaderStyled>
     );
 };

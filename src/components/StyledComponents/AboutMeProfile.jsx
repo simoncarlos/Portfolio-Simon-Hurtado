@@ -1,10 +1,19 @@
 import styled from "styled-components";
 
-const HeaderProfile = styled.div`
+const AboutMeProfile = styled.div`
     padding: 2%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
     position: relative;
+    @media(min-width: 768px){
+        width: 350px;
+        height: 350px;
+    }
+    @media(min-width: 1024px){
+        width: 375px;
+        height: 375px;
+    }
     div{
         width: 100%;
         height: 100%;
@@ -58,11 +67,19 @@ const HeaderProfile = styled.div`
         content: "";
         height: 85%;
         width: 85%;
-        bottom: 5%;
-        right: 4%;
+        bottom: 1%;
+        right: -1%;
         border: 3px solid black;
         background-color: red;
+        @media(min-width: 768px){
+            bottom: 2%;
+            right: 1%;
+        }
+        @media(min-width: 1024px){
+            bottom: 5%;
+            right: 4%;
+        }
     }
 `;
 
-export { HeaderProfile }
+export { AboutMeProfile }

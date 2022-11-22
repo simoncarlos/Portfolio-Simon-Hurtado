@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Small = styled.small`
-    font-size: ${ props => props.size || "1.5rem" };
+    font-size: ${ props => props.size || "1.4rem" };
     font-family: SFmono;
     font-weight: 500;
 
