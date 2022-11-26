@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-const Subtitle = styled.h1`
+const Subtitle = styled.h2`
     font-size: ${ props => props.size || "1.7rem" };
     font-family: calibre;
     font-weight: 800;
     line-height: 40px;
-    margin: 10px 0 -10px 0;
+    margin: 0;
+    padding: 0;
+    margin: -20px 0 -30px 0;
     &::selection{
         background-color: #006bff;
         color: #fcfcf4;

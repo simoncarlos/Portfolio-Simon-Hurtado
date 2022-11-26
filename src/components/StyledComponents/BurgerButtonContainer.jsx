@@ -9,7 +9,7 @@ const BurgerButtonContainer = styled.div`
     span{
         height: 16%;
         background-color: black;
-        border-radius: 5px;
+        border-radius: 2px;
         &:nth-child(0n+1){
             width: 100%;
         }

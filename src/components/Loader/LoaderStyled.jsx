@@ -19,6 +19,7 @@ const Animation = styled.img`
     width: 40vw;
     animation: ${desapearAnimation} 5.5s linear;
     opacity: 0;
+    z-index: 20;
     @media(min-width: 768px){
         width: 25vw
     }

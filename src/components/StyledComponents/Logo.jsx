@@ -11,8 +11,8 @@ const apearedLine = keyframes`
 
 const Logo = styled.img`
     position: absolute;
-    height: 80px;
-    padding: 15px 20px 15px 0;
+    width: 50px;
+    z-index: 20;
 `;
 // animation: ${apearedLine} 1s linear;
 export { Logo };
