@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
 const Nav = styled.nav`
+    position: fixed;
+    top: 0;
     height: 80px;
     width: 100%;
     padding: 0 5vw;
@@ -8,6 +10,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
     div{
         display: flex;
     }
@@ -32,7 +35,7 @@ const Nav = styled.nav`
     .burguerButton{
         cursor: pointer;
         @media(min-width: 768px){
-            
+            display: none;
         }
     }  
     

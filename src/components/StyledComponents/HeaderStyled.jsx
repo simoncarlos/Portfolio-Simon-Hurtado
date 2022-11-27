@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const HeaderStyled = styled.header`
+    margin-top: 80px; 
     height: calc(100vh - 50px);
     background-color: #fcfcf4;
     padding: 25% 8% 0 8%;

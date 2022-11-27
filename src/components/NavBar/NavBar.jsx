@@ -10,11 +10,12 @@ import gsap from "gsap";
 
 const NavBar = () => {
 
-    //const [activeMenu, setActiveMenu] = useState(false);
-//
-    //const handleClick = () => {
-    //    setActiveMenu(!activeMenu);
-    //}
+    const [activeMenu, setActiveMenu] = useState(false);
+
+    const handleClick = () => {
+        setActiveMenu(!activeMenu);
+    }
+
     useLayoutEffect( () => {
 
         const ctx = gsap.context( () => {
@@ -50,20 +51,20 @@ const NavBar = () => {
     return (
         <Nav>
             <Logo className="apeared-logo" src={LogoMondrian} alt="Imagen de logo"></Logo>
-            {/*<div className={`navLinks`}>
+            <div className="navLinks">
                 <a href="">Home</a>
                 <a href="">Proyect</a>
                 <a href="">Experience</a>
                 <a href="">Contact</a>
                 <a href="">Design</a>
             </div>
+            {/*
             active={activeMenu}
             handleClick={ handleClick }>
             */}
-            <div></div>
-            <BurgerButton>
+            <BurgerButton handleClick={ handleClick }>
             </BurgerButton>
-            {/*<BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
+            <BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
                 <div className="navLinksResponsive">
                     <a href="">Home</a>
                     <a href="">Proyect</a>
@@ -71,7 +72,7 @@ const NavBar = () => {
                     <a href="">Contact</a>
                     <a href="">Design</a>
                 </div>
-            </BackgroundNavBarMobile>*/}
+            </BackgroundNavBarMobile>
             <NavBarLine className="apeared-navBarLine"></NavBarLine>
         </Nav>
     );
