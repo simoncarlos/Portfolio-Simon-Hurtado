@@ -24,14 +24,40 @@ const Nav = styled.nav`
         .navLinks{
             position: initial;
             margin: 0;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 45%;
             a{
-                font-size: 1rem;
-                display: inline;
+                color: black;
+                text-decoration: none;
+                small{
+                    font-size: 1.1rem;
+                }
+            }
+            a::after{
+                content: '';
+                display: block;
+                position: relative;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: 0;
+                background-color: black;
+                transition: width 0.4s ease-in-out;
+            }
+            a:hover::after{
+                width: 100%
             }
         }
     }
     
+    @media(min-width: 1024px){
+        .navLinks{
+            width: 35%;
+        }
+    }
+
     .burguerButton{
         cursor: pointer;
         @media(min-width: 768px){

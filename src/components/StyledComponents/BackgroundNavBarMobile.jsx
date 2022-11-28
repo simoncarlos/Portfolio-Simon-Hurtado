@@ -13,7 +13,7 @@ const BackgroundNavBarMobile = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
     &.active{
         height: calc(100vh - 50px);
         left: 0;

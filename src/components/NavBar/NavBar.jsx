@@ -7,6 +7,7 @@ import { BackgroundNavBarMobile } from "../StyledComponents/BackgroundNavBarMobi
 import { useLayoutEffect } from "react";
 import { NavBarLine } from "../StyledComponents/NavBarLine";
 import gsap from "gsap";
+import { Small } from "../StyledComponents/Small";
 
 const NavBar = () => {
 
@@ -28,8 +29,8 @@ const NavBar = () => {
             }).from(".apeared-logo", {
                 xPercent:-50, 
                 yPercent:-50, 
-                left:"50%",
-                top:"50%",
+                left:"50vw",
+                top:"50vh",
                 delay: 0.5,
                 duration: 0.5
             }).to(".apeared-navBarLine", {
@@ -51,12 +52,13 @@ const NavBar = () => {
     return (
         <Nav>
             <Logo className="apeared-logo" src={LogoMondrian} alt="Imagen de logo"></Logo>
+            <div></div>
             <div className="navLinks">
-                <a href="">Home</a>
-                <a href="">Proyect</a>
-                <a href="">Experience</a>
-                <a href="">Contact</a>
-                <a href="">Design</a>
+                <a href=""><Small>Home</Small></a>
+                <a href=""><Small>Proyect</Small></a>
+                <a href=""><Small>Experience</Small></a>
+                <a href=""><Small>Contact</Small></a>
+                <a href=""><Small>Design</Small></a>
             </div>
             {/*
             active={activeMenu}
@@ -66,11 +68,11 @@ const NavBar = () => {
             </BurgerButton>
             <BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
                 <div className="navLinksResponsive">
-                    <a href="">Home</a>
-                    <a href="">Proyect</a>
-                    <a href="">Experience</a>
-                    <a href="">Contact</a>
-                    <a href="">Design</a>
+                    <a href=""><Small>Home</Small></a>
+                    <a href=""><Small>Proyect</Small></a>
+                    <a href=""><Small>Experience</Small></a>
+                    <a href=""><Small>Contact</Small></a>
+                    <a href=""><Small>Design</Small></a>
                 </div>
             </BackgroundNavBarMobile>
             <NavBarLine className="apeared-navBarLine"></NavBarLine>
