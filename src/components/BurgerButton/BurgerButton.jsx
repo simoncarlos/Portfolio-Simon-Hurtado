@@ -1,4 +1,4 @@
-import { BurgerButtonContainer } from "../StyledComponents/BurgerButtonContainer"
+import { BurgerButtonContainer } from "../StyledComponents/NavBar/BurgerButtonContainer"
 
 const BurgerButton = ( props ) => {
     return(

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import LoaderContainer from "./components/LoaderContainer/LoaderContainer";
 import Body from "./components/Body/Body";
-
+import LoadingGif from "../src/assets/loading/mondrian-loading.gif"
+import { LoaderContainer } from "./components/StyledComponents/Loader/LoaderContainer.Style";
+import { LoaderAnimation } from "./components/StyledComponents/Loader/LoaderAnimation.style";
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,9 @@ function App() {
 
     {
       loading
-      ? <LoaderContainer/>
+      ? <LoaderContainer>
+        <LoaderAnimation src={ LoadingGif }/>
+      </LoaderContainer>
       : 
       <Body/>
     }

@@ -1,4 +1,4 @@
-import { AboutMeContainer } from "../StyledComponents/AboutMeContainer";
+import { AboutMeContainer } from "../StyledComponents/AboutMe/AboutMeContainer";
 import { Title } from "../StyledComponents/Title";
 import { Text } from "../StyledComponents/Text";
 import { Subtitle } from "../StyledComponents/Subtitle";

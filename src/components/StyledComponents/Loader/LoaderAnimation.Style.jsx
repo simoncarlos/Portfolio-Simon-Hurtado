@@ -15,7 +15,7 @@ const desapearAnimation = keyframes`
     }
 `;
 
-const Animation = styled.img`
+const LoaderAnimation = styled.img`
     width: 40vw;
     animation: ${desapearAnimation} 5.5s linear;
     opacity: 0;
@@ -28,4 +28,4 @@ const Animation = styled.img`
     }
 `;
 
-export { Animation };
+export { LoaderAnimation };

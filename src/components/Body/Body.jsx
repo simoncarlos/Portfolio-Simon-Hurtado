@@ -4,11 +4,11 @@ import AboutMe from "../AboutMe/AboutMe";
 
 const Body = () => {
     return(
-        <div>
+        <>
             <NavBar/>
             <Header></Header>
             <AboutMe></AboutMe>
-        </div>
+        </>
     );
 };
 

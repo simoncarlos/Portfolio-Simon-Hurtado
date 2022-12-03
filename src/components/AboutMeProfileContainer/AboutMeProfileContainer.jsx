@@ -1,4 +1,4 @@
-import { AboutMeProfile } from "../StyledComponents/AboutMeProfile"
+import { AboutMeProfile } from "../StyledComponents/AboutMe/AboutMeProfile"
 import profile from "../../assets/profile/profile.png"
 
 const AboutMeProfileContainer = () => {
