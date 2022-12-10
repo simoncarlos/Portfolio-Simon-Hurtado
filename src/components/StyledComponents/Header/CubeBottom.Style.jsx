@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CubeBottom = styled.div`
+export const CubeBottom = styled.div`
     position: absolute;
     left: calc( 10vw + 50px - 25px );
     bottom: 0;
@@ -11,5 +11,3 @@ const CubeBottom = styled.div`
         left: calc( 4vw + 50px - 25px );
     }
 `;
-
-export { CubeBottom };

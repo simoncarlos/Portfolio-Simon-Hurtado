@@ -1,18 +1,18 @@
-import { HeaderStyled } from "../StyledComponents/HeaderStyled"; 
+import { SocialMedia } from "../StyledComponents/Header/SocialMedia.Style";
+import { LineBottom } from "../StyledComponents/Header/LineBottom.Style";
+import { CubeBottom } from "../StyledComponents/Header/CubeBottom.Style";
+import { LineLeft } from "../StyledComponents/Header/LineLeft.Style";
+import { HeaderStyled } from "../StyledComponents/Header/Header.Style"; 
+import { Subtitle } from "../StyledComponents/Texts/Subtitle.Style";
 import { Button } from "../StyledComponents/Button";
-import { Title } from "../StyledComponents/Title";
-import { Small } from "../StyledComponents/Small";
-import { Text } from "../StyledComponents/Text";
+import { Title } from "../StyledComponents/Texts/Title.Style";
+import { Small } from "../StyledComponents/Texts/Small.Style";
+import { Text } from "../StyledComponents/Texts/Text.Style";
+import { RiLinkedinFill } from "react-icons/ri";
+import { GrMailOption } from "react-icons/gr";
+import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
-import { LineLeft } from "../StyledComponents/Header/LineLeft";
-import { LineBottom } from "../StyledComponents/Header/LineBottom";
-import { CubeBottom } from "../StyledComponents/Header/CubeBottom";
-import { Subtitle } from "../StyledComponents/Subtitle";
-import { SocialMedia } from "../StyledComponents/Header/SocialMedia";
-import { RiLinkedinFill } from "react-icons/ri";
-import { FiGithub } from "react-icons/fi";
-import { GrMailOption } from "react-icons/gr";
 
 const Header = () => {
     
@@ -93,7 +93,7 @@ const Header = () => {
                 <a href="https://www.linkedin.com/in/simon-carlos/">
                     <RiLinkedinFill className="icon linkedin"></RiLinkedinFill>
                 </a>
-                <a href="https://github.com/diegosimonnn">
+                <a href="https://github.com/simoncarlos">
                     <FiGithub className="icon github"></FiGithub>
                 </a>
                 <a href="mailto:csimonhurtado@gmail.com">

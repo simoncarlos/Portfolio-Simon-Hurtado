@@ -1,14 +1,16 @@
-import { useState } from "react";
-import { Nav }  from "../StyledComponents/Nav";
-//import { Logo } from "../StyledComponents/Logo";
-import BurgerButton from "../BurgerButton/BurgerButton";
+import { NavigationMobile } from "../StyledComponents/NavBar/NavigationMobile.Style";
+import { NavBarLine } from "../StyledComponents/NavBar/NavBarLine.Style";
 import LogoMondrian from "../../assets/logos/mondrian-d.png"
-import { BackgroundNavBarMobile } from "../StyledComponents/NavBar/BackgroundNavBarMobile";
-import { useLayoutEffect } from "react";
-import { NavBarLine } from "../StyledComponents/NavBar/NavBarLine";
-import gsap from "gsap";
-import { Small } from "../StyledComponents/Small";
+import BurgerButton from "../BurgerButton/BurgerButton";
+import { Small } from "../StyledComponents/Texts/Small.Style";
 import { Logo } from "../StyledComponents/Logo";
+import { RiLinkedinFill } from "react-icons/ri";
+import { Nav }  from "../StyledComponents/NavBar/Nav.Style";
+import { GrMailOption } from "react-icons/gr";
+import { FiGithub } from "react-icons/fi";
+import { useLayoutEffect } from "react";
+import { useState } from "react";
+import gsap from "gsap";
 
 
 const NavBar = () => {
@@ -66,7 +68,7 @@ const NavBar = () => {
 
     return (
         <Nav>
-            <Logo className="apeared-logo" src={ LogoMondrian } alt="Imagen de logo"></Logo>
+            <Logo className="apeared-logo" src={ LogoMondrian } alt="Logotipo Mondrian letra D"></Logo>
             <div className="navLinks">
                 <a href=""><Small>Home</Small></a>
                 <a href=""><Small>Proyect</Small></a>
@@ -75,15 +77,26 @@ const NavBar = () => {
                 <a href=""><Small>Design</Small></a>
             </div>
             <BurgerButton handleClick={ handleClick } />
-            <BackgroundNavBarMobile className={ activeMenu ? "active" : "" }>
-                <div className="navLinksResponsive">
+            <NavigationMobile className={ activeMenu ? "active" : "" }>
+                <div className="nav-links">
                     <a href=""><Small>Home</Small></a>
                     <a href=""><Small>Proyect</Small></a>
                     <a href=""><Small>Experience</Small></a>
                     <a href=""><Small>Contact</Small></a>
                     <a href=""><Small>Design</Small></a>
                 </div>
-            </BackgroundNavBarMobile>
+                <div className="nav-social">
+                    <a href="https://www.linkedin.com/in/simon-carlos/">
+                        <RiLinkedinFill className="icon linkedin"></RiLinkedinFill>
+                    </a>
+                    <a href="https://github.com/simoncarlos">
+                        <FiGithub className="icon github"></FiGithub>
+                    </a>
+                    <a href="mailto:csimonhurtado@gmail.com">
+                        <GrMailOption className="icon mail"/>
+                    </a>
+                </div>
+            </NavigationMobile>
             <NavBarLine className="apeared-navBarLine"></NavBarLine>
         </Nav>
     );

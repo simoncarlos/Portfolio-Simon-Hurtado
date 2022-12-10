@@ -1,11 +1,18 @@
 import { AboutMeContainer } from "../StyledComponents/AboutMe/AboutMeContainer";
-import { Title } from "../StyledComponents/Title";
-import { Text } from "../StyledComponents/Text";
-import { Subtitle } from "../StyledComponents/Subtitle";
+import { Title } from "../StyledComponents/Texts/Title.Style";
+import { Text } from "../StyledComponents/Texts/Text.Style";
+import { Subtitle } from "../StyledComponents/Texts/Subtitle.Style";
 import AboutMeProfileContainer from "../AboutMeProfileContainer/AboutMeProfileContainer";
-import { Small } from "../StyledComponents/Small";
+import { Small } from "../StyledComponents/Texts/Small.Style";
+import { skills } from "../../utils/skills";
+import { AboutMeKnowledge } from "../StyledComponents/AboutMe/AboutMeKnowledge";
+import LogoMondrian from "../../assets/logos/mondrian-d.png"
+import { AboutMeKnowledgeContainer } from "../StyledComponents/AboutMe/AboutMeKnowledgeContainer";
+import { tools } from "../../utils/tools";
+
 
 const AboutMe = () => {
+
     return(
         <AboutMeContainer>
             <article className="aboutMeDescription">
@@ -28,12 +35,21 @@ const AboutMe = () => {
                     Actualmente me encuentro estudiando Ingenieria en Sistemas de Información, la carrera de Desarrollo Web Full Stack en CoderHouse y desarrollando en paralelo diversos proyectos complejos
                     para mejorar mis habilidades tecnicas como un administrador de tareas multiusuario, una aplicacion de chat y un clon de spotify.
                 </Text>
-                <Subtitle>Lenguajes, Librerias & Frameworks</Subtitle>
-                <Small size="1.1rem">React, GSAP, Redux, Node.js, Express, Javascript(ES6), TypeScript, Java, HTML,CSS/SASS, SQL, Visual Basic, C++</Small>
-                <Subtitle>Tools & Plataformas</Subtitle>
-                <Small size="1.1rem">Amazon Web Services(AWS), Google App Scripts, Git, Firebase, Linux, Webpack, Chart.js, Netlify, Figma, Wordpress, Adobe Photoshop, Adobe Ilustrator</Small>
             </article>
-            <AboutMeProfileContainer></AboutMeProfileContainer>
+            <div className="knowledge">   
+                <Subtitle>Lenguajes, Librerias & Frameworks</Subtitle>
+                <AboutMeKnowledgeContainer>
+                {   
+                    skills.map( skill => <AboutMeKnowledge key={ skill.name }> <img src={ skill.image } alt="Logo de Mondrian" /> <Small size="1.1rem"> { skill.name } </Small> </AboutMeKnowledge> )
+                }
+                </AboutMeKnowledgeContainer>
+                <Subtitle>Tools & Plataformas</Subtitle>
+                <AboutMeKnowledgeContainer>
+                {
+                    tools.map( tool => <AboutMeKnowledge key={ tool.name }> <img src={ tool.image } alt="Logo de Mondrian" /> <Small size="1.1rem"> { tool.name } </Small> </AboutMeKnowledge> )
+                }
+                </AboutMeKnowledgeContainer>
+            </div>
         </AboutMeContainer>
     );
 };
