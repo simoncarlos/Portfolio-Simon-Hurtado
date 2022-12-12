@@ -6,9 +6,9 @@ const Proyects = () => {
     return(
         <ProyectsContainer>
             <Title> Proyectos.. </Title>
-            <ProyectItem/>
-            <ProyectItem/>
-            <ProyectItem/>
+            <ProyectItem align="left"/>
+            <ProyectItem align="right"/>
+            <ProyectItem align="left"/>
         </ProyectsContainer>
     );
 };
