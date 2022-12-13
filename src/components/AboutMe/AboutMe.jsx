@@ -9,9 +9,31 @@ import { AboutMeKnowledge } from "../StyledComponents/AboutMe/AboutMeKnowledge";
 import LogoMondrian from "../../assets/logos/mondrian-d.png"
 import { AboutMeKnowledgeContainer } from "../StyledComponents/AboutMe/AboutMeKnowledgeContainer";
 import { tools } from "../../utils/tools";
-
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
+
+    useEffect( () => {
+
+        gsap.fromTo( ".subtitle", {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1, 
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".subtitle",
+                start: "top 70%",
+                markers: true
+            }
+        })
+
+    }, []);
 
     return(
         <AboutMeContainer>
@@ -37,7 +59,7 @@ const AboutMe = () => {
                 </Text>
             </article>
             <div className="knowledge">   
-                <Subtitle>Lenguajes, Librerias & Frameworks</Subtitle>
+                <Subtitle className="subtitle">Lenguajes, Librerias & Frameworks</Subtitle>
                 <AboutMeKnowledgeContainer>
                 {   
                     skills.map( skill => <AboutMeKnowledge key={ skill.name }> <img src={ skill.image } alt="Logo de Mondrian" /> <Small size="1.1rem"> { skill.name } </Small> </AboutMeKnowledge> )

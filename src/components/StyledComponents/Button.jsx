@@ -4,7 +4,7 @@ const Button = styled.a`
     position: relative;
     border: 3px solid black;
     background-color: #fcfcf4;
-    padding: 10px 20px;
+    padding: ${ props => props.padding || "10px 20px" };
     color: black;
     font-size: ${ props => props.size || "1.1rem" };
     font-family: SFmono;

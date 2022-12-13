@@ -10,6 +10,19 @@ export const ProyectFrontFrame = styled.div`
     top: 0;
     ${ props => props.align }
     z-index: -1;
+    padding: 2%;
+    div {
+        width: 100%;
+        height: 100%;
+        border: 3px solid black;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        object-fit: cover;
+    }
     @media(min-width: 768px){
         width: 60%;
     }
