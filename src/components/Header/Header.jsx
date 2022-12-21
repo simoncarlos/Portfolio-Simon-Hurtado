@@ -12,6 +12,7 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
+import HeaderAnimation from "../HeaderAnimation/HeaderAnimation";
 import gsap from "gsap";
 
 const Header = () => {
@@ -112,6 +113,7 @@ const Header = () => {
                 </Text>
                 <Button className="apeared-button">Descargar CV</Button>
             </article>
+            <HeaderAnimation></HeaderAnimation>
             <LineBottom className="apeared-line-bottom"></LineBottom>
             <CubeBottom></CubeBottom>
         </HeaderStyled>

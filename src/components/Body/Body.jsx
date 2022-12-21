@@ -9,7 +9,6 @@ const Body = () => {
             <NavBar/>
             <Header></Header>
             <AboutMe></AboutMe>
-            <Proyects></Proyects>
         </>
     );
 };

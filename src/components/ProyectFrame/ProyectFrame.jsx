@@ -19,8 +19,7 @@ const ProyectFrame = ( { align } ) => {
             duration: 1.5,
             scrollTrigger: {
                 trigger: ".proyect-frame",
-                start: "top 70%",
-                markers: true
+                start: "top 70%"
             }
         })
 
