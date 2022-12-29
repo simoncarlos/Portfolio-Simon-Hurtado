@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderAnimationContainer = styled.section`
-    
     position: absolute;
     top: 0;
     right: 0;
@@ -33,13 +32,13 @@ export const HeaderAnimationContainer = styled.section`
     .a1 { display: none; }
     .a2 { display: none; }
     .a3 { display: none; }
-    .b1 { grid-area: b1; background-color: #232b69;}
-    .b2 { grid-area: b2; background-color: #de2d27;}
-    .b3 { grid-area: b3; background-color: #ffc90a;}
-    .b4 { grid-area: b4; background-color: #232b69;}
+    .b1 { display: none; }
+    .b2 { display: none; }
+    .b3 { display: none; }
+    .b4 { display: none; }
     .c1 { grid-area: c1; background-color: #232b69;}
     .c2 { grid-area: c2; background-color: #232b69;}
-    .c3 { grid-area: c3; background-color: #de2d27;}
+    .c3 { grid-area: c3; background-color: red;}
     .c4 { grid-area: c4; background-color: #ffc90a;}
 
     @media(min-width: 768px){
@@ -54,15 +53,16 @@ export const HeaderAnimationContainer = styled.section`
         "a3 b3 c4" 1fr
         "a3 b4 c4" 1fr
         / 1fr 1fr 1fr;
-
-        .a1 { display: block; grid-area: a1; background-color: #de2d27;}
-        .a2 { display: block; grid-area: a2; background-color: #ffc90a;}
-        .a3 { display: block; grid-area: a3; background-color: #232b69;}
+        .b1 { display: block; grid-area: b1; background-color: #232b69;}
+        .b2 { display: block; grid-area: b2; background-color: red;}
+        .b3 { display: block; grid-area: b3; background-color: #ffc90a;}
+        .b4 { display: block; grid-area: b4; background-color: #232b69;}
     }
     @media(min-width: 1024px){
-        position: absolute;
-        top: 0;
-        right: 5%;
+        .a1 { display: block; grid-area: a1; background-color: red;}
+        .a2 { display: block; grid-area: a2; background-color: #ffc90a;}
+        .a3 { display: block; grid-area: a3; background-color: #232b69;}
+        right: 2.5%;
         width: 20%;
         gap: 8px;
     }

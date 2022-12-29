@@ -69,6 +69,7 @@ const AboutMeProfile = styled.div`
         width: 85%;
         bottom: 1%;
         right: -1%;
+        z-index: 5;
         border: 3px solid black;
         background-color: red;
         @media(min-width: 768px){

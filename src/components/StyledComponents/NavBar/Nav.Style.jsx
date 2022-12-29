@@ -27,7 +27,7 @@ const Nav = styled.nav`
             display: flex;
             align-items: center;
             justify-content: space-around;
-            width: 45%;
+            width: 65%;
             a{
                 color: black;
                 text-decoration: none;
@@ -54,7 +54,7 @@ const Nav = styled.nav`
     
     @media(min-width: 1024px){
         .navLinks{
-            width: 35%;
+            width: 40%;
         }
     }
 

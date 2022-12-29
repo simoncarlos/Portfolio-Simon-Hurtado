@@ -13,6 +13,7 @@ import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
 import HeaderAnimation from "../HeaderAnimation/HeaderAnimation";
+import AboutMeProfileContainer from "../AboutMeProfileContainer/AboutMeProfileContainer";
 import gsap from "gsap";
 
 const Header = () => {

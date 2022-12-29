@@ -7,12 +7,12 @@ const HeaderStyled = styled.header`
     padding: 0 8%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     @media(min-width: 768px){
-        
+        padding: 0 3% 0 8%;
     }
     @media(min-width: 1024px){
-        padding: 0 20%;
+        padding: 0 7.5% 0 15%;
     }
     .header-info{
         margin-top: -90px;

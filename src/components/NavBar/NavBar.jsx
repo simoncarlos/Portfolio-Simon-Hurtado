@@ -70,20 +70,20 @@ const NavBar = () => {
         <Nav>
             <Logo className="apeared-logo" src={ LogoMondrian } alt="Logotipo Mondrian letra D"></Logo>
             <div className="navLinks">
-                <a href=""><Small>Home</Small></a>
-                <a href=""><Small>Proyect</Small></a>
-                <a href=""><Small>Experience</Small></a>
-                <a href=""><Small>Contact</Small></a>
-                <a href=""><Small>Design</Small></a>
+                <a href="#inicio"><Small>Inicio</Small></a>
+                <a href="#aboutMe"><Small>Acerca de mi</Small></a>
+                <a href=""><Small>Proyectos</Small></a>
+                <a href=""><Small>Experiencia</Small></a>
+                <a href=""><Small>Contacto</Small></a>
             </div>
             <BurgerButton handleClick={ handleClick } />
             <NavigationMobile className={ activeMenu ? "active" : "" }>
                 <div className="nav-links">
-                    <a href=""><Small>Home</Small></a>
-                    <a href=""><Small>Proyect</Small></a>
-                    <a href=""><Small>Experience</Small></a>
-                    <a href=""><Small>Contact</Small></a>
-                    <a href=""><Small>Design</Small></a>
+                    <a href=""><Small>Inicio</Small></a>
+                    <a href=""><Small>Acerca de mi</Small></a>
+                    <a href=""><Small>Proyectos</Small></a>
+                    <a href=""><Small>Experiencia</Small></a>
+                    <a href=""><Small>Contacto</Small></a>
                 </div>
                 <div className="nav-social">
                     <a href="https://www.linkedin.com/in/simon-carlos/">
