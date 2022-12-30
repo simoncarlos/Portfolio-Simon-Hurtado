@@ -19,5 +19,5 @@ export const skills = [
     { name: "Chart JS",             important: false,       image: `${route}-chart.png` },
     { name: "SASS",                 important: false,       image: `${route}-sass.png` },
     { name: "CSS",                  important: false,       image: `${route}-css.png` },
-    { name: "HTML",                 important: false,       image: `${route}-html.webp` },
+    { name: "HTML",                 important: false,       image: `${route}-html.png` },
 ]

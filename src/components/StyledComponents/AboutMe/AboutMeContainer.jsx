@@ -19,13 +19,17 @@ const AboutMeContainer = styled.section`
     @media(min-width: 768px){
         .aboutMeProfile{
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
         }
         .aboutMeDescription{
             width: 45%;
         }
     }
     @media(min-width: 1024px){
+        padding: 8% 15%;
+        .aboutMeDescription{
+            width: 55%;
+        }
     }
 `;
 

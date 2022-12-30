@@ -37,7 +37,7 @@ const AboutMe = () => {
                 <Subtitle className="subtitle">Lenguajes, Librerias, Frameworks & Tools</Subtitle>
                 <AboutMeKnowledgeContainer>
                 {   
-                    skills.map( skill => <AboutMeKnowledge key={ skill.name } important={ skill.important } > <GoTriangleRight /> <Small size="1.1rem"> { skill.name } </Small> </AboutMeKnowledge> )
+                    skills.map( skill => <AboutMeKnowledge key={ skill.name } important={ skill.important } > <GoTriangleRight /> <img src={skill.image} alt="Imagen de tech"/> <Small size="1.1rem"> { skill.name } </Small> </AboutMeKnowledge> )
                 }
                 </AboutMeKnowledgeContainer>
             </div>
