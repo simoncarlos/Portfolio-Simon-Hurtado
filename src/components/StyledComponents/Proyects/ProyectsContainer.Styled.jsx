@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const ProyectsContainer = styled.section`
     background-color: #fcfcf4;
-    padding: 5%;
+    .center-title{
+        padding-left: 8%;
+    }
     @media(min-width: 1024px){
-        padding: 5% 10%;
+        .center-title{
+            padding-left: 15%;
+        }
     }
 `;

@@ -1,33 +1,44 @@
 import { Subtitle } from "../StyledComponents/Texts/Subtitle.Style";
-import { ProyectItemContainer } from "../StyledComponents/Proyects/ProyectsItemContainer.Styled";
-import { ProyectDescription } from "../StyledComponents/Proyects/ProyectDescription.Styled";
+import { ProyectItemContainer } from "../StyledComponents/Proyects/ProyectItemContainer.Styled";
 import { Text } from "../StyledComponents/Texts/Text.Style";
 import { Small } from "../StyledComponents/Texts/Small.Style";
 import { Button } from "../StyledComponents/Button";
-import ProyectFrame from "../ProyectFrame/ProyectFrame";
-import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
 import { ImGithub } from "react-icons/im";
 import { FcGoogle } from "react-icons/fc";
 import { FiPlus } from "react-icons/fi";
+import { ProyectNumber } from "../StyledComponents/Proyects/ProyectNumber.Styled";
+import { ProyectTitle } from "../StyledComponents/Proyects/ProyectTitle.Styled";
+import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
+import mockup from "../../assets/mockups/sait-computer.png";
 
-const ProyectItem = ( { align } ) => {
+const ProyectItem = () => {
 
     return(
-        <ProyectItemContainer align={ align } className="proyect-item">
-            <ProyectFrame align={ align == "left" ? "right: 0;" : "left: 0;"}>
-            </ProyectFrame>
-            <ProyectDescription className="proyect-description">
-                <Subtitle>Proyecto nro ..</Subtitle>
+        <ProyectItemContainer>
+            <article>
+                <ProyectNumber>01</ProyectNumber>
+                <ProyectTitle>Hideki Task</ProyectTitle>
                 <Text>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi modi, culpa enim aspernatur quisquam et velit aperiam exercitationem pariatur voluptatum beatae. Qui, saepe possimus obcaecati facilis praesentium iure magni!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium facilis similique deserunt, eligendi cum est quaerat. Iure aperiam assumenda.
                 </Text>
-                <Small size="1rem" >Tecnologias: xxxxxxxx xxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx</Small>
+                <div className="small-container">
+                    <Small size="1.1rem">
+                        Tecnologias: React, Typescript, Tailwind CSS, Vite.
+                    </Small>
+                </div>
                 <ProyectButtonContainer>
-                    <Button size="2rem" padding="10px 20px 5px 20px" ><FcGoogle/></Button>
-                    <Button size="2rem" padding="10px 20px 5px 20px" ><ImGithub/></Button>
-                    <Button size="2rem" padding="10px 20px 5px 20px" ><FiPlus/></Button>
+                    <div>
+                        <Button padding="7.5px 15px"><Small size="0.9rem">Conocer mas</Small></Button>
+                    </div>
+                    <div>
+                        <Button padding="7.5px 15px"><Small size="0.9rem">Demo</Small></Button>
+                    </div>
+                    <div>
+                        <Button padding="7.5px 15px"><Small size="0.9rem">Repositorio</Small></Button>
+                    </div>
                 </ProyectButtonContainer>
-            </ProyectDescription>
+            </article>
+            <img src={mockup} alt="" />
         </ProyectItemContainer>
     );
 };

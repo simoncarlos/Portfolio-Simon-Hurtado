@@ -5,10 +5,10 @@ import ProyectItem from "../ProyectItem/ProyectItem";
 const Proyects = () => {
     return(
         <ProyectsContainer>
-            <Title> Proyectos.. </Title>
-            <ProyectItem align="left"/>
-            <ProyectItem align="right"/>
-            <ProyectItem align="left"/>
+            <Title className="center-title"> Proyectos.. </Title>
+            <ProyectItem />
+            <ProyectItem />
+            <ProyectItem />
         </ProyectsContainer>
     );
 };

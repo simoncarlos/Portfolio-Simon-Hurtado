@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
 export const ProyectButtonContainer = styled.div`
-    margin: 40px 0 10px;
-    a{
-        z-index: 0;
-        margin-right: 20px;
-        &::after{
-            z-index: -1;
-        }
-    }
-    @media(min-width: 768px){        
-        padding-right: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    justify-content: space-between;
+    @media(min-width: 768px){
         justify-content: start;
-        * {
-            
+        div{
+            margin-right: 20px;
         }
     }
 `;

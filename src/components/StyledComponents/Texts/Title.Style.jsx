@@ -16,7 +16,6 @@ const Title = styled.h1`
     @media(min-width: 1024px){
         line-height: 60px;
     }
-
 `;
 
 export { Title }
