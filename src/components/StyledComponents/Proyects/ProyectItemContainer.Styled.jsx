@@ -16,7 +16,7 @@ export const ProyectItemContainer = styled.div`
         right: 0;
         width: 25%;
         height: 100%;
-        background-color: red;
+        background-color: rgb(${ props => props.color || "0,0,0" }) ;
         border-left: 3px solid black;
         z-index: 0;
     }

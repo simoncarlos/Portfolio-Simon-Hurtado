@@ -9,21 +9,19 @@ import { FiPlus } from "react-icons/fi";
 import { ProyectNumber } from "../StyledComponents/Proyects/ProyectNumber.Styled";
 import { ProyectTitle } from "../StyledComponents/Proyects/ProyectTitle.Styled";
 import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
-import mockup from "../../assets/mockups/sait-computer.png";
 
-const ProyectItem = () => {
-
+const ProyectItem = ({number, name, description, stack, image, color}) => {
     return(
-        <ProyectItemContainer>
+        <ProyectItemContainer color={color}>
             <article>
-                <ProyectNumber>01</ProyectNumber>
-                <ProyectTitle>Hideki Task</ProyectTitle>
+                <ProyectNumber color={color} >0{number+1}</ProyectNumber>
+                <ProyectTitle>{name}</ProyectTitle>
                 <Text>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium facilis similique deserunt, eligendi cum est quaerat. Iure aperiam assumenda.
+                    {description}
                 </Text>
                 <div className="small-container">
                     <Small size="1.1rem">
-                        Tecnologias: React, Typescript, Tailwind CSS, Vite.
+                        Technologies: {stack}
                     </Small>
                 </div>
                 <ProyectButtonContainer>
@@ -38,7 +36,7 @@ const ProyectItem = () => {
                     </div>
                 </ProyectButtonContainer>
             </article>
-            <img src={mockup} alt="" />
+            <img src={image} alt="" />
         </ProyectItemContainer>
     );
 };
