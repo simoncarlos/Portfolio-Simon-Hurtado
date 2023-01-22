@@ -9,6 +9,7 @@ export const ProyectNumber = styled.p`
     font-family: calibre;
     font-weight: 800;
     color: rgba(${ props => props.color || "0,0,0" }, 0.1) ;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.15);
     &::selection{
         background-color: #006bff;
         color: #fcfcf4;

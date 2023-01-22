@@ -7,7 +7,6 @@ const Proyects = () => {
     return(
         <ProyectsContainer>
             <Title className="center-title"> Proyectos.. </Title>
-            
             {
                 proyects.map( (proyectItem, index) => { 
                     return <ProyectItem 

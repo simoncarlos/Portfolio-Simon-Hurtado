@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ProyectItemContainer = styled.div`
     height: 85vh;
-    border-top: 3px solid black;
     padding: 0 8%;
     position: relative;
     display: flex;
@@ -17,7 +16,7 @@ export const ProyectItemContainer = styled.div`
         width: 25%;
         height: 100%;
         background-color: rgb(${ props => props.color || "0,0,0" }) ;
-        border-left: 3px solid black;
+        
         z-index: 0;
     }
     > * {
