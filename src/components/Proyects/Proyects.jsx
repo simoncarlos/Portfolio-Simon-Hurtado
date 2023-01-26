@@ -6,7 +6,7 @@ import { proyects } from "../../utils/proyects.js";
 const Proyects = () => {
     return(
         <ProyectsContainer>
-            <Title className="center-title"> Proyectos.. </Title>
+            <Title className="center-title"> Proyectos</Title>
             {
                 proyects.map( (proyectItem, index) => { 
                     return <ProyectItem 

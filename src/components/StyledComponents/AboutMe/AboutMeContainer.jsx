@@ -26,7 +26,7 @@ const AboutMeContainer = styled.section`
         }
     }
     @media(min-width: 1024px){
-        padding: 8% 15%;
+        padding: 8% 15% 0 15%;
         .aboutMeDescription{
             width: 55%;
         }
