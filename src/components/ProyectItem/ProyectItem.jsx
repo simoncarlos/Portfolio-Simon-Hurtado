@@ -10,7 +10,7 @@ import { ProyectNumber } from "../StyledComponents/Proyects/ProyectNumber.Styled
 import { ProyectTitle } from "../StyledComponents/Proyects/ProyectTitle.Styled";
 import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
 
-const ProyectItem = ({number, name, description, stack, image, color}) => {
+const ProyectItem = ({number, name, description, stack, image, color, demo, repo, more}) => {
     return(
         <ProyectItemContainer color={color}>
             <article>
@@ -26,13 +26,19 @@ const ProyectItem = ({number, name, description, stack, image, color}) => {
                 </div>
                 <ProyectButtonContainer>
                     <div>
-                        <Button padding="7.5px 15px"><Small size="0.9rem">Conocer mas</Small></Button>
+                        <a href={more} target="_blank">
+                            <Button padding="7.5px 15px"><Small size="0.9rem">Conocer mas</Small></Button>
+                        </a>
                     </div>
                     <div>
-                        <Button padding="7.5px 15px"><Small size="0.9rem">Demo</Small></Button>
+                        <a href={demo} target="_blank">
+                            <Button padding="7.5px 15px"><Small size="0.9rem">Demo</Small></Button>
+                        </a>
                     </div>
                     <div>
-                        <Button padding="7.5px 15px"><Small size="0.9rem">Repositorio</Small></Button>
+                        <a href={repo} target="_blank">
+                            <Button padding="7.5px 15px"><Small size="0.9rem">Repositorio</Small></Button>
+                        </a>
                     </div>
                 </ProyectButtonContainer>
             </article>

@@ -29,6 +29,9 @@ const HeaderStyled = styled.header`
             width: 75%;
         }
     }
+    a{
+        text-decoration: none;
+    }
 `;
 
 export { HeaderStyled };

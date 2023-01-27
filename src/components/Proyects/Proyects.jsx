@@ -5,7 +5,7 @@ import { proyects } from "../../utils/proyects.js";
 
 const Proyects = () => {
     return(
-        <ProyectsContainer>
+        <ProyectsContainer id="proyects">
             <Title className="center-title"> Proyectos</Title>
             {
                 proyects.map( (proyectItem, index) => { 
@@ -17,6 +17,9 @@ const Proyects = () => {
                     stack={proyectItem.technologies}
                     image={proyectItem.mockup}
                     color={proyectItem.color}
+                    demo={proyectItem.demo}
+                    repo={proyectItem.repositorio}
+                    more={proyectItem.more}
                     />                    
                 })
             }

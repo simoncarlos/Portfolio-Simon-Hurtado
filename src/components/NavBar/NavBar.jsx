@@ -18,7 +18,9 @@ const NavBar = () => {
     const [activeMenu, setActiveMenu] = useState(false);
 
     const handleClick = () => {
+        console.log(activeMenu)
         setActiveMenu(!activeMenu);
+        console.log(activeMenu)
     }
 
     useLayoutEffect( () => {
@@ -72,18 +74,18 @@ const NavBar = () => {
             <div className="navLinks">
                 <a href="#inicio"><Small>Inicio</Small></a>
                 <a href="#aboutMe"><Small>Acerca de mi</Small></a>
-                <a href=""><Small>Proyectos</Small></a>
-                <a href=""><Small>Experiencia</Small></a>
-                <a href=""><Small>Contacto</Small></a>
+                <a href="#experience"><Small>Experiencia</Small></a>
+                <a href="#proyects"><Small>Proyectos</Small></a>
+                <a href="#contact"><Small>Contacto</Small></a>
             </div>
             <BurgerButton handleClick={ handleClick } />
             <NavigationMobile className={ activeMenu ? "active" : "" }>
                 <div className="nav-links">
-                    <a href=""><Small>Inicio</Small></a>
-                    <a href=""><Small>Acerca de mi</Small></a>
-                    <a href=""><Small>Proyectos</Small></a>
-                    <a href=""><Small>Experiencia</Small></a>
-                    <a href=""><Small>Contacto</Small></a>
+                    <a href="#inicio" handleClick={ handleClick }><Small>Inicio</Small></a>
+                    <a href="#aboutMe" handleClick={ handleClick }><Small>Acerca de mi</Small></a>
+                    <a href="#experience" handleClick={ handleClick }><Small>Experiencia</Small></a>
+                    <a href="#proyects" handleClick={ handleClick }><Small>Proyectos</Small></a>
+                    <a href="#contact" handleClick={ handleClick }><Small>Contacto</Small></a>
                 </div>
                 <div className="nav-social">
                     <a href="https://www.linkedin.com/in/simon-carlos/">

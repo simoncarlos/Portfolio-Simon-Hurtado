@@ -32,6 +32,9 @@ export const ProyectItemContainer = styled.div`
     img{
         width: 100%;
     }
+    a{
+        text-decoration: none;
+    }
     @media(min-width: 768px){
         height: 65vh;
         img{

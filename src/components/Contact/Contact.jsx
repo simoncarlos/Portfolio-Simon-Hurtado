@@ -8,7 +8,7 @@ import { FiGithub } from "react-icons/fi";
 
 const Contact = () => {
     return(
-        <ContactContainer>
+        <ContactContainer id="contact">
             <Title>Contacto</Title>
             <Text>
             👉 Si estas en búsqueda de un Frontend Developer con amplio conocimiento tanto de Back End como de diseño y sus implementaciones en el desarrollo web entonces te invito a contactarme por mis redes sociales o a través de mi mail csimonhurtado@gmail.com

@@ -6,7 +6,7 @@ import { experience } from "../../utils/experience";
 
 const Experience = ( ) => {
     return(
-        <ExperienceContainer>
+        <ExperienceContainer id="experience">
             <Title>Experiencia</Title>
             <ExperienceList data={experience} />
         </ExperienceContainer>

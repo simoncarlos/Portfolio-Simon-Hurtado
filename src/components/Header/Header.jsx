@@ -89,7 +89,7 @@ const Header = () => {
     }, []);
 
     return(
-        <HeaderStyled>
+        <HeaderStyled id="inicio">
             <LineLeft className="apeared-line-left"/>
             <SocialMedia>
                 <a href="https://www.linkedin.com/in/simon-carlos/">
@@ -112,7 +112,11 @@ const Header = () => {
                     Actualmente me encuentro trabajando en
                     multiples proyectos para mejorar mis habilidades tecnicas.
                 </Text>
-                <Button className="apeared-button">Descargar CV</Button>
+                <a href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank">
+                    <Button className="apeared-button">
+                            Descargar CV    
+                    </Button>
+                </a>
             </article>
             <HeaderAnimation></HeaderAnimation>
             <LineBottom className="apeared-line-bottom"></LineBottom>
