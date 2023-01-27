@@ -4,8 +4,8 @@ import LogoMondrian from "../../assets/logos/mondrian-d.png"
 import BurgerButton from "../BurgerButton/BurgerButton";
 import { Small } from "../StyledComponents/Texts/Small.Style";
 import { Logo } from "../StyledComponents/Logo";
-import { RiLinkedinFill } from "react-icons/ri";
 import { Nav }  from "../StyledComponents/NavBar/Nav.Style";
+import { RiLinkedinFill } from "react-icons/ri";
 import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
