@@ -1,12 +1,16 @@
 import { ProyectsContainer } from "../StyledComponents/Proyects/ProyectsContainer.Styled";
 import { Title } from "../StyledComponents/Texts/Title.Style";
 import ProyectItem from "../ProyectItem/ProyectItem";
-import { proyects } from "../../utils/proyects.js";
+import useTranslatedData from "../../utils/useTranslatedData";
+import { useTranslation } from "react-i18next";
 
 const Proyects = () => {
+    const { t } = useTranslation();
+    const { proyects } = useTranslatedData();
+    
     return(
         <ProyectsContainer id="proyects">
-            <Title className="center-title"> Proyectos</Title>
+            <Title className="center-title">{t("proyects.title")}</Title>
             {
                 proyects.map( (proyectItem, index) => { 
                     return <ProyectItem 

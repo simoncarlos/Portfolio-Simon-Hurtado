@@ -1,0 +1,40 @@
+import styled from "styled-components";
+
+export const LanguageContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const LanguageButton = styled.button`
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const LanguageMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fcfcf4;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  min-width: 120px;
+  
+  button {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+`;

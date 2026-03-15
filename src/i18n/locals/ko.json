@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "inicio": "홈",
+    "aboutMe": "내 소개",
+    "experience": "경력",
+    "proyects": "프로젝트",
+    "contact": "연락처"
+  },
+  "header": {
+    "greeting": "안녕하세요! 제 이름은",
+    "name": "Carlos Diego Simon Hurtado",
+    "subtitle": "프론트엔드 소프트웨어 개발자",
+    "description": "저는 차별화된 사용자 경험을 가진 인터랙티브 웹 애플리케이션의 설계와 구축에 전문화된 정보 시스템 공학 학생입니다. 현재 기술적 역량 향상을 위해 여러 프로젝트에 참여하고 있습니다.",
+    "downloadCV": "이력서 다운로드"
+  },
+  "aboutMe": {
+    "title": "내 소개",
+    "description": "안녕하세요! 저는 완전한 문제를 해결하는 창의적이고 단순한 솔루션을 설계하는 것을 좋아하는 카를로스 디에고 시몬 우르타도입니다. 저는 부에노스아이레스대학교에서 3년간 건축학을 전공했으며, 이는 저가 그래픽 디자인의 기초를 쌓고 추상적 사고 능력을 개발할 수 있게 해 주었습니다. 코로나19로 인한 격리 기간 이후, 제가 테이블 테니스를 연습하던 클럽에서 대회와 차별화된 제품이 필요로 했고, 참가자 명단, 존 시딩 및 토너먼트 브라켓을 웹사이트에서 실시간으로 확인할 수 있는 토너먼트 등록용 자체 관리 모듈을 처음부터 개발했습니다. 이후 이 제품은 부에노스아이레스 시내와 부에노스아이레스 지역 Various 클럽에서 사용되고 판매되고 있습니다. 현재 저는 정보 시스템 공학을 전공하고 있고, CoderHouse에서 풀스택 웹 개발 인증을 마무리하고 있으며, 제 기술적 역량을 하루하루 향상시키기 위해 다양한 복잡한 프로젝트를 개발하고 있습니다.",
+    "skills": "언어, 라이브러리, 프레임워크 및 도구"
+  },
+  "experience": {
+    "title": "경력",
+    "items": [
+      {
+        "name": "프론트엔드 소프트웨어 개발자",
+        "company": "프리랜서",
+        "date": "2021년 2월 - 2022년 6월",
+        "description": "사용자 트래픽이 많은 React 및 Google App Scripts를 사용한 자체 관리 모듈 구현. 고객 요구사항에 따른 요구사항 분석, 계획 및 소프트웨어 유지보수.",
+        "bgcolor": "red"
+      },
+      {
+        "name": "백엔드 소프트웨어 개발자",
+        "company": "MasterSoft",
+        "date": "2017년 6월 - 12월",
+        "description": "Sperta 관리 소프트웨어의 데이터베이스 액세스 모듈 성능 개선, 인시던트 해결, 문서화 및 보고서 조사.",
+        "bgcolor": "#ffc90a"
+      }
+    ]
+  },
+  "proyects": {
+    "title": "프로젝트",
+    "technologies": "기술",
+    "knowMore": "자세히 보기",
+    "demo": "데모",
+    "repository": "저장소",
+    "items": [
+      {
+        "name": "SAIT Alvear Club",
+        "description": "참가자 시각화 및 스네이크 알고리즘을 통한 존 시딩이 가능한 자동화된 토너먼트 등록 시스템.",
+        "technologies": "React, CSS, Google App Scripts, Google Sheets"
+      },
+      {
+        "name": "Hideki Task Manager",
+        "description": "그래픽 시각화, 사용자 로그인, 게스트 액세스 및 CRUD 작업이 가능한 다중 사용자 작업 관리자.",
+        "technologies": "Vanilla JavaScript, Bootstrap, Chart JS, JSON"
+      },
+      {
+        "name": "Ecommerce Lacroix Pattisier",
+        "description": "제품 시각화, 재고 관리 기능이 있는 장바구니 추가 기능 및 구매 주문 생성 기능이 있는 전자상거래.",
+        "technologies": "React, Tailwind CSS, Firebase, Context"
+      }
+    ]
+  },
+  "contact": {
+    "title": "연락처",
+    "message": "👉 백엔드와 디자인 및 웹 개발 구현에 관한 광범위한 지식을 갖춘 프론트엔드 개발자를 찾고 계시다면, 소셜 네트워크 또는 이메일을 통해 저에게 연락해 주세요",
+    "email": "csimonhurtado@gmail.com"
+  }
+}

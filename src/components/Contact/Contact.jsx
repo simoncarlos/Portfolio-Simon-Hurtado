@@ -5,13 +5,16 @@ import { Button } from "../StyledComponents/Button";
 import { RiLinkedinFill } from "react-icons/ri";
 import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation();
+    
     return(
         <ContactContainer id="contact">
-            <Title>Contacto</Title>
+            <Title>{t("contact.title")}</Title>
             <Text>
-            👉 Si estas en búsqueda de un Frontend Developer con amplio conocimiento tanto de Back End como de diseño y sus implementaciones en el desarrollo web entonces te invito a contactarme por mis redes sociales o a través de mi mail csimonhurtado@gmail.com
+            {t("contact.message")} {t("contact.email")}
             </Text>
             <div className="social-container">
                 <a href="https://www.linkedin.com/in/simon-carlos/" target="_blank">
@@ -24,7 +27,7 @@ const Contact = () => {
                             <FiGithub className="icon github"></FiGithub>
                     </Button>
                 </a>
-                <a href="mailto:csimonhurtado@gmail.com" target="_blank">
+                <a href={"mailto:" + t("contact.email")} target="_blank">
                     <Button>
                             <GrMailOption className="icon mail"/>
                     </Button>
@@ -35,4 +38,3 @@ const Contact = () => {
 };
 
 export default Contact;
-// Mail Linkedin Github 
