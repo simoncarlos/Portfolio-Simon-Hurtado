@@ -28,6 +28,7 @@ const Nav = styled.nav`
             align-items: center;
             justify-content: space-around;
             width: 65%;
+            margin-right: 5%;
             a{
                 color: black;
                 text-decoration: none;

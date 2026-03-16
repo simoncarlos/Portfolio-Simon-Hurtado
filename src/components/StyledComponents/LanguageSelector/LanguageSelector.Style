@@ -16,7 +16,7 @@ export const LanguageButton = styled.button`
   transition: transform 0.2s;
   display: flex;
   align-items: center;
-  gap: 5px;
+  margin: -0.6rem 0px 0px 0px;
   &:hover {
     transform: scale(1.1);
   }
@@ -25,16 +25,17 @@ export const LanguageButton = styled.button`
 export const LanguageMenu = styled.div`
   position: absolute;
   top: 100%;
-  right: 0;
   background: #fcfcf4;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
+  align-items:center;
   z-index: 1000;
   min-width: 120px;
-  
+  height: auto;
+  padding 10px;
   button {
-    padding: 8px 12px;
+    margin: 8px 10px;
     font-size: 1rem;
   }
 `;
