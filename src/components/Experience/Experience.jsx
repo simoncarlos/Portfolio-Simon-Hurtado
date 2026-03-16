@@ -1,13 +1,17 @@
 import { ExperienceContainer } from "../StyledComponents/Experience/ExperienceContainer";
 import { Title } from "../StyledComponents/Texts/Title.Style";
 import ExperienceList from "../ExperienceList/ExperienceList";
-import { experience } from "../../utils/experience";
+import useTranslatedData from "../../utils/useTranslatedData";
+import { useTranslation } from "react-i18next";
 
 
-const Experience = ( ) => {
+const Experience = () => {
+    const { t } = useTranslation();
+    const { experience } = useTranslatedData();
+    
     return(
         <ExperienceContainer id="experience">
-            <Title>Experiencia</Title>
+            <Title>{t("experience.title")}</Title>
             <ExperienceList data={experience} />
         </ExperienceContainer>
     );

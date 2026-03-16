@@ -28,6 +28,7 @@ const Nav = styled.nav`
             align-items: center;
             justify-content: space-around;
             width: 65%;
+            margin-right: 5%;
             a{
                 color: black;
                 text-decoration: none;
@@ -52,12 +53,21 @@ const Nav = styled.nav`
         }
     }
     
-    @media(min-width: 1024px){
+@media(min-width: 1024px){
         .navLinks{
             width: 40%;
         }
     }
 
+    .language-selector-desktop{
+        display: none;
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+    }
+    
     .burguerButton{
         cursor: pointer;
         @media(min-width: 768px){

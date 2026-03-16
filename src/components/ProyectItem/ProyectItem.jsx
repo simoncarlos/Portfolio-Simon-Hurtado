@@ -9,8 +9,11 @@ import { FiPlus } from "react-icons/fi";
 import { ProyectNumber } from "../StyledComponents/Proyects/ProyectNumber.Styled";
 import { ProyectTitle } from "../StyledComponents/Proyects/ProyectTitle.Styled";
 import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
+import { useTranslation } from "react-i18next";
 
 const ProyectItem = ({number, name, description, stack, image, color, demo, repo, more}) => {
+    const { t } = useTranslation();
+    
     return(
         <ProyectItemContainer color={color}>
             <article>
@@ -21,23 +24,23 @@ const ProyectItem = ({number, name, description, stack, image, color, demo, repo
                 </Text>
                 <div className="small-container">
                     <Small size="1.1rem">
-                        Technologies: {stack}
+                        {t("proyects.technologies")}: {stack}
                     </Small>
                 </div>
                 <ProyectButtonContainer>
                     <div>
                         <a href={more} target="_blank">
-                            <Button padding="7.5px 15px"><Small size="0.9rem">Conocer mas</Small></Button>
+                            <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.knowMore")}</Small></Button>
                         </a>
                     </div>
                     <div>
                         <a href={demo} target="_blank">
-                            <Button padding="7.5px 15px"><Small size="0.9rem">Demo</Small></Button>
+                            <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.demo")}</Small></Button>
                         </a>
                     </div>
                     <div>
                         <a href={repo} target="_blank">
-                            <Button padding="7.5px 15px"><Small size="0.9rem">Repositorio</Small></Button>
+                            <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.repository")}</Small></Button>
                         </a>
                     </div>
                 </ProyectButtonContainer>
