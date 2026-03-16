@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "aboutMe": "About Me",
+    "experience": "Experience",
+    "proyects": "Projects",
+    "contact": "Contact"
+  },
+  "header": {
+    "greeting": "Hi! My name is",
+    "name": "Carlos Diego Simon Hurtado",
+    "subtitle": "Front-End Software Developer",
+    "description": "I am a student of Information Systems Engineering specialized in the design and construction of interactive web applications with an exceptional user experience. Currently I am working on multiple projects to improve my technical skills.",
+    "downloadCV": "Download Resume"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "description": "Hello! I am Carlos Diego Simon Hurtado and I love designing creative and simple solutions that solve complete problems. I studied Architecture for 3 years at the University of Buenos Aires, which allowed me to train in the basics of graphic design and develop abstract reasoning skills. After the quarantine due to covid-19, the table tennis club where I trained required a distinctive product from the competition and I developed from scratch a self-administering module for tournament registration that allowed all players to see the list of registered players, zone seeding and tournament brackets in real time from a website. Since then it is used and marketed in different clubs in CABA and the Buenos Aires suburbs. Currently I am studying Information Systems Engineering, finishing the Full Stack Web Development certification at CoderHouse and developing various complex projects to improve my technical skills in search of overcoming myself day by day.",
+    "skills": "Languages, Libraries, Frameworks & Tools"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "name": "Frontend Software Developer",
+        "company": "Freelance",
+        "date": "February 2021 - June 2022",
+        "description": "Implementation of self-administered modules with React and Google App Scripts with high user traffic. Requirements analysis, planning and software maintenance, according to client needs.",
+        "bgcolor": "red"
+      },
+      {
+        "name": "Backend Software Developer",
+        "company": "MasterSoft",
+        "date": "June - December 2017",
+        "description": "Performance improvements in the database access modules of the Sperta management software, incident resolution, documentation and report surveys.",
+        "bgcolor": "#ffc90a"
+      }
+    ]
+  },
+  "proyects": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "knowMore": "Know more",
+    "demo": "Demo",
+    "repository": "Repository",
+    "items": [
+      {
+        "name": "SAIT Alvear Club",
+        "description": "Automated Tournament Registration System with participant visualization and zone seeding using snake algorithm.",
+        "technologies": "React, CSS, Google App Scripts, Google Sheets"
+      },
+      {
+        "name": "Hideki Task Manager",
+        "description": "Multi-user task manager with graphical visualization, user login, guest access and CRUD operations.",
+        "technologies": "Vanilla JavaScript, Bootstrap, Chart JS, JSON"
+      },
+      {
+        "name": "Ecommerce Lacroix Pattisier",
+        "description": "E-commerce with product visualization, cart addition functionalities with stock control and purchase order generation.",
+        "technologies": "React, Tailwind CSS, Firebase, Context"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "message": "👉 If you are looking for a Frontend Developer with extensive knowledge of both Back End and design and its implementations in web development, then I invite you to contact me through my social networks or through my email",
+    "email": "csimonhurtado@gmail.com"
+  }
+}

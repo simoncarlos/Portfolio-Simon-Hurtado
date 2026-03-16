@@ -15,9 +15,10 @@ import { useLayoutEffect } from "react";
 import HeaderAnimation from "../HeaderAnimation/HeaderAnimation";
 import AboutMeProfileContainer from "../AboutMeProfileContainer/AboutMeProfileContainer";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
-    
+    const {t} = useTranslation();
     useLayoutEffect( () => {
 
         const ctx = gsap.context( () => {
@@ -103,18 +104,15 @@ const Header = () => {
                 </a>
             </SocialMedia>
             <article className="header-info" >
-                <Small className="apeared-small">¡Hola! Mi nombre es</Small>
-                <Title className="apeared-title">Carlos Diego Simon Hurtado</Title>
-                <Subtitle className="apeared-subtitle" size="1.6rem" >Front-End Software Developer</Subtitle>
+                <Small className="apeared-small">{t("header.greeting")}</Small>
+                <Title className="apeared-title">{t("header.name")}</Title>
+                <Subtitle className="apeared-subtitle" size="1.6rem" >{t("header.subtitle")}</Subtitle>
                 <Text className="apeared-text">
-                    Soy estudiante de Ingenieria en Sistemas de Información especializado en el diseño y la construcción
-                    de aplicaciones web interactivas con una excepcional experiencia de usuario.
-                    Actualmente me encuentro trabajando en
-                    multiples proyectos para mejorar mis habilidades tecnicas.
+                    {t("header.description")}
                 </Text>
                 <a href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank">
                     <Button className="apeared-button">
-                            Descargar CV    
+                            {t("header.downloadCV")}   
                     </Button>
                 </a>
             </article>

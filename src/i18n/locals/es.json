@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "aboutMe": "Acerca de mí",
+    "experience": "Experiencia",
+    "proyects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "header": {
+    "greeting": "¡Hola! Mi nombre es",
+    "name": "Carlos Diego Simon Hurtado",
+    "subtitle": "Front-End Software Developer",
+    "description": "Soy estudiante de Ingeniería en Sistemas de Información especializado en el diseño y la construcción de aplicaciones web interactivas con una excepcional experiencia de usuario. Actualmente me encuentro trabajando en múltiples proyectos para mejorar mis habilidades técnicas.",
+    "downloadCV": "Descargar CV"
+  },
+  "aboutMe": {
+    "title": "Acerca de mí",
+    "description": "¡Hola! Soy Carlos Diego Simon Hurtado y me encanta diseñar soluciones creativas y simples que resuelvan problematicas completas. Estudié durante 3 años la carrera de Arquitectura en la Universidad de Buenos Aires, la cual me permitió formarme con las bases del diseño grafico y desarrollar la capacidad de razonamiento abstracto. Despues de la cuarentena por el covid-19 el club donde entrenaba tenis de mesa requeria un producto distintivo de la competencia y desarrollé desde cero un modulo autoadministrable para inscripcion de torneos que permitia ver a todos los jugadores los listados de inscriptos, sembrado de zonas y llaves del torneo en tiempo real desde una pagina web. Desde ese entonces es utilizado y comercializado en diferentes clubes de CABA y el conurbano Bonaerense. Actualmente me encuentro estudiando Ingenieria en Sistemas de Información, terminando la certificación de Desarrollo Web Full Stack en CoderHouse y desarrollando diversos proyectos complejos para mejorar mis habilidades tecnicas en busca de superarme dia a dia.",
+    "skills": "Lenguajes, Librerías, Frameworks & Tools"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "name": "Frontend Software Developer",
+        "company": "Autónomo",
+        "date": "Febrero 2021 - junio 2022",
+        "description": "Implementación de módulos autoadministrables con React y Google App Scripts con alto tráfico de usuarios. Análisis de requerimientos, planificación y mantenimiento de software, según las necesidades del cliente.",
+        "bgcolor": "red"
+      },
+      {
+        "name": "Backend Software Developer",
+        "company": "MasterSoft",
+        "date": "Junio - diciembre 2017",
+        "description": "Mejoras de rendimiento en los módulos de acceso a la base de datos del software de administración Sperta, resolución de incidencias, documentación y relevamientos de informes.",
+        "bgcolor": "#ffc90a"
+      }
+    ]
+  },
+  "proyects": {
+    "title": "Proyectos",
+    "technologies": "Tecnologías",
+    "knowMore": "Conocer más",
+    "demo": "Demo",
+    "repository": "Repositorio",
+    "items": [
+      {
+        "name": "SAIT Alvear Club",
+        "description": "Sistema Automatizado de Inscripción de torneos, con visualización de inscriptos y sembrado de zonas con algoritmo de serpenteo.",
+        "technologies": "React, CSS, Google App Scripts, Google Sheets"
+      },
+      {
+        "name": "Hideki Task Manager",
+        "description": "Administrador de tareas multiusuario, con visualización gráfica, logueo de usuario, acceso de invitado y operaciones CRUD.",
+        "technologies": "Vainilla JavaScript, Bootstrap, Chart JS, JSON"
+      },
+      {
+        "name": "Ecommerce Lacroix Pattisier",
+        "description": "E-commerce con visualización de productos, funcionalidades de añadido de carrito con control de stock y generación de órdenes de compra.",
+        "technologies": "React, Tailwind CSS, Firebase, Context"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "message": "👉 Si estás en búsqueda de un Frontend Developer con amplio conocimiento tanto de Back End como de diseño y sus implementaciones en el desarrollo web entonces te invito a contactarme por mis redes sociales o a través de mi mail",
+    "email": "csimonhurtado@gmail.com"
+  }
+}

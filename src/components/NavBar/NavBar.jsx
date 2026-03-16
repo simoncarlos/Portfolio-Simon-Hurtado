@@ -11,10 +11,12 @@ import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
 import { useState } from "react";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 
 const NavBar = () => {
-
+    const { t } = useTranslation();
     const [activeMenu, setActiveMenu] = useState(false);
 
     const handleClick = () => {
@@ -63,6 +65,16 @@ const NavBar = () => {
                 duration: 1
             })
 
+            let tlLanguageButton = gsap.timeline();
+
+            tlLanguageButton.from(".language-selector", {
+                position: "relative",
+                opacity: 0,
+                top:"-500px",
+                delay: 2.5,
+                duration: 1
+            })
+
         })
         return () => ctx.revert();
 
@@ -72,20 +84,26 @@ const NavBar = () => {
         <Nav>
             <Logo className="apeared-logo" src={ LogoMondrian } alt="Logotipo Mondrian letra D"></Logo>
             <div className="navLinks">
-                <a href="#inicio"><Small>Inicio</Small></a>
-                <a href="#aboutMe"><Small>Acerca de mi</Small></a>
-                <a href="#experience"><Small>Experiencia</Small></a>
-                <a href="#proyects"><Small>Proyectos</Small></a>
-                <a href="#contact"><Small>Contacto</Small></a>
+                <a href="#inicio"><Small>{t("nav.inicio")}</Small></a>
+                <a href="#aboutMe"><Small>{t("nav.aboutMe")}</Small></a>
+                <a href="#experience"><Small>{t("nav.experience")}</Small></a>
+                <a href="#proyects"><Small>{t("nav.proyects")}</Small></a>
+                <a href="#contact"><Small>{t("nav.contact")}</Small></a>
+                <a className="language-selector-desktop">
+                    <LanguageSelector />
+                </a>
             </div>
             <BurgerButton handleClick={ handleClick } />
             <NavigationMobile className={ activeMenu ? "active" : "" }>
                 <div className="nav-links">
-                    <a href="#inicio" handleClick={ handleClick }><Small>Inicio</Small></a>
-                    <a href="#aboutMe" handleClick={ handleClick }><Small>Acerca de mi</Small></a>
-                    <a href="#experience" handleClick={ handleClick }><Small>Experiencia</Small></a>
-                    <a href="#proyects" handleClick={ handleClick }><Small>Proyectos</Small></a>
-                    <a href="#contact" handleClick={ handleClick }><Small>Contacto</Small></a>
+                    <a href="#inicio" handleClick={ handleClick }><Small>{t("nav.inicio")}</Small></a>
+                    <a href="#aboutMe" handleClick={ handleClick }><Small>{t("nav.aboutMe")}</Small></a>
+                    <a href="#experience" handleClick={ handleClick }><Small>{t("nav.experience")}</Small></a>
+                    <a href="#proyects" handleClick={ handleClick }><Small>{t("nav.proyects")}</Small></a>
+                    <a href="#contact" handleClick={ handleClick }><Small>{t("nav.contact")}</Small></a>
+                    <a className="language-selector">
+                        <LanguageSelector />
+                    </a>
                 </div>
                 <div className="nav-social">
                     <a href="https://www.linkedin.com/in/simon-carlos/">
