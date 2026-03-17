@@ -2,7 +2,6 @@ import { ExperienceItemContainer } from "../StyledComponents/Experience/Experien
 import { ExperienceTitle } from "../StyledComponents/Experience/ExperienceTtitle";
 import { Small } from "../StyledComponents/Texts/Small.Style"
 import { Text } from  "../StyledComponents/Texts/Text.Style"
-import AboutMeProfileContainer from "../AboutMeProfileContainer/AboutMeProfileContainer"
 const ExperienceItem = ({ title, company, date, description, color }) => {
     return(
         <ExperienceItemContainer color={color}>

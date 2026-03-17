@@ -60,17 +60,17 @@ const HeaderAnimation = () => {
 
     return(
         <HeaderAnimationContainer>
-                <div class="a1"></div>
-                <div class="a2"></div>
-                <div class="a3"></div>
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-                <div class="b4"></div>
-                <div class="c1"></div>
-                <div class="c2"></div>
-                <div class="c3"></div>
-                <div class="c4"></div>
+                <div className="a1"></div>
+                <div className="a2"></div>
+                <div className="a3"></div>
+                <div className="b1"></div>
+                <div className="b2"></div>
+                <div className="b3"></div>
+                <div className="b4"></div>
+                <div className="c1"></div>
+                <div className="c2"></div>
+                <div className="c3"></div>
+                <div className="c4"></div>
         </HeaderAnimationContainer>
     );
 };
