@@ -19,10 +19,9 @@ const NavBar = () => {
     const { t } = useTranslation();
     const [activeMenu, setActiveMenu] = useState(false);
 
-    const handleClick = () => {
-        console.log(activeMenu)
+    const handleClick = (event) => {
+        event.preventDefault();
         setActiveMenu(!activeMenu);
-        console.log(activeMenu)
     }
 
     useLayoutEffect( () => {
@@ -96,11 +95,11 @@ const NavBar = () => {
             <BurgerButton handleClick={ handleClick } />
             <NavigationMobile className={ activeMenu ? "active" : "" }>
                 <div className="nav-links">
-                    <a href="#inicio" handleClick={ handleClick }><Small>{t("nav.inicio")}</Small></a>
-                    <a href="#aboutMe" handleClick={ handleClick }><Small>{t("nav.aboutMe")}</Small></a>
-                    <a href="#experience" handleClick={ handleClick }><Small>{t("nav.experience")}</Small></a>
-                    <a href="#proyects" handleClick={ handleClick }><Small>{t("nav.proyects")}</Small></a>
-                    <a href="#contact" handleClick={ handleClick }><Small>{t("nav.contact")}</Small></a>
+                    <a href="#inicio" onClick={ handleClick }><Small>{t("nav.inicio")}</Small></a>
+                    <a href="#aboutMe" onClick={ handleClick }><Small>{t("nav.aboutMe")}</Small></a>
+                    <a href="#experience" onClick={ handleClick }><Small>{t("nav.experience")}</Small></a>
+                    <a href="#proyects" onClick={ handleClick }><Small>{t("nav.proyects")}</Small></a>
+                    <a href="#contact" onClick={ handleClick }><Small>{t("nav.contact")}</Small></a>
                     <a className="language-selector">
                         <LanguageSelector />
                     </a>

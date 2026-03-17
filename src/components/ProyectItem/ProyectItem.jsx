@@ -1,11 +1,7 @@
-import { Subtitle } from "../StyledComponents/Texts/Subtitle.Style";
 import { ProyectItemContainer } from "../StyledComponents/Proyects/ProyectItemContainer.Styled";
 import { Text } from "../StyledComponents/Texts/Text.Style";
 import { Small } from "../StyledComponents/Texts/Small.Style";
 import { Button } from "../StyledComponents/Button";
-import { ImGithub } from "react-icons/im";
-import { FcGoogle } from "react-icons/fc";
-import { FiPlus } from "react-icons/fi";
 import { ProyectNumber } from "../StyledComponents/Proyects/ProyectNumber.Styled";
 import { ProyectTitle } from "../StyledComponents/Proyects/ProyectTitle.Styled";
 import { ProyectButtonContainer } from "../StyledComponents/Proyects/ProyectButtonContainer.Styled";
@@ -29,17 +25,17 @@ const ProyectItem = ({number, name, description, stack, image, color, demo, repo
                 </div>
                 <ProyectButtonContainer>
                     <div>
-                        <a href={more} target="_blank">
+                        <a href={more} target="_blank" rel="noreferrer">
                             <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.knowMore")}</Small></Button>
                         </a>
                     </div>
                     <div>
-                        <a href={demo} target="_blank">
+                        <a href={demo} target="_blank" rel="noreferrer">
                             <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.demo")}</Small></Button>
                         </a>
                     </div>
                     <div>
-                        <a href={repo} target="_blank">
+                        <a href={repo} target="_blank" rel="noreferrer">
                             <Button padding="7.5px 15px"><Small size="0.9rem">{t("proyects.repository")}</Small></Button>
                         </a>
                     </div>

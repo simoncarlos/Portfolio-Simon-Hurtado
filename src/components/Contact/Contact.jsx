@@ -17,17 +17,17 @@ const Contact = () => {
             {t("contact.message")} {t("contact.email")}
             </Text>
             <div className="social-container">
-                <a href="https://www.linkedin.com/in/simon-carlos/" target="_blank">
+                <a href="https://www.linkedin.com/in/simon-carlos/" target="_blank" rel="noreferrer">
                     <Button>
                             <RiLinkedinFill className="icon linkedin"/>
                     </Button>
                 </a>
-                <a href="https://github.com/simoncarlos" target="_blank">
+                <a href="https://github.com/simoncarlos" target="_blank" rel="noreferrer">
                     <Button>
                             <FiGithub className="icon github"></FiGithub>
                     </Button>
                 </a>
-                <a href={"mailto:" + t("contact.email")} target="_blank">
+                <a href={"mailto:" + t("contact.email")} target="_blank" rel="noreferrer">
                     <Button>
                             <GrMailOption className="icon mail"/>
                     </Button>

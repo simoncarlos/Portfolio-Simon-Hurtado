@@ -13,7 +13,6 @@ import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
 import HeaderAnimation from "../HeaderAnimation/HeaderAnimation";
-import AboutMeProfileContainer from "../AboutMeProfileContainer/AboutMeProfileContainer";
 import gsap from "gsap";
 import { useTranslation } from "react-i18next";
 
@@ -110,7 +109,7 @@ const Header = () => {
                 <Text className="apeared-text">
                     {t("header.description")}
                 </Text>
-                <a href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank" rel="noreferrer">
                     <Button className="apeared-button">
                             {t("header.downloadCV")}   
                     </Button>
