@@ -109,11 +109,9 @@ const Header = () => {
                 <Text className="apeared-text">
                     {t("header.description")}
                 </Text>
-                <a href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank" rel="noreferrer">
-                    <Button className="apeared-button">
-                            {t("header.downloadCV")}   
-                    </Button>
-                </a>
+                <Button className="apeared-button" href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank" rel="noreferrer">
+                        {t("header.downloadCV")}   
+                </Button>
             </article>
             <HeaderAnimation></HeaderAnimation>
             <LineBottom className="apeared-line-bottom"></LineBottom>

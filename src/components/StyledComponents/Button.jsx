@@ -10,7 +10,7 @@ const Button = styled.a`
     font-family: SFmono;
     font-weight: 500;
     cursor: pointer;
-    z-index: 0;
+    isolation: isolate;
     &::after{
         content: "";
         position: absolute;
