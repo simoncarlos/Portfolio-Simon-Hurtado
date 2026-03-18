@@ -5,7 +5,7 @@ const ExperienceList = ( {data} ) => {
     return(
         <ExperienceListContainer>
             {
-                data.map( experience => {
+                (data || []).map( experience => {
                     return <ExperienceItem
                         key={experience.name}
                         title={experience.name}

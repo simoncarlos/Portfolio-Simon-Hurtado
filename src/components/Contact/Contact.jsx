@@ -17,21 +17,21 @@ const Contact = () => {
             {t("contact.message")} {t("contact.email")}
             </Text>
             <div className="social-container">
-                <a href="https://www.linkedin.com/in/simon-carlos/" target="_blank" rel="noreferrer">
-                    <Button>
+                <div>
+                    <Button href="https://www.linkedin.com/in/simon-carlos/" target="_blank" rel="noreferrer">
                             <RiLinkedinFill className="icon linkedin"/>
                     </Button>
-                </a>
-                <a href="https://github.com/simoncarlos" target="_blank" rel="noreferrer">
-                    <Button>
+                </div>
+                <div>
+                    <Button href="https://github.com/simoncarlos" target="_blank" rel="noreferrer">
                             <FiGithub className="icon github"></FiGithub>
                     </Button>
-                </a>
-                <a href={"mailto:" + t("contact.email")} target="_blank" rel="noreferrer">
-                    <Button>
+                </div>
+                <div>
+                    <Button href={"mailto:" + t("contact.email")} target="_blank" rel="noreferrer">
                             <GrMailOption className="icon mail"/>
                     </Button>
-                </a>
+                </div>
             </div>
         </ContactContainer>
     );
