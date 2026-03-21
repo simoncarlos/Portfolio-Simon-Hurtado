@@ -9,27 +9,34 @@
   "header": {
     "greeting": "¡Hola! Mi nombre es",
     "name": "Carlos Diego Simon Hurtado",
-    "subtitle": "Front-End Software Developer",
-    "description": "Soy estudiante de Ingeniería en Sistemas de Información especializado en el diseño y la construcción de aplicaciones web interactivas con una excepcional experiencia de usuario. Actualmente me encuentro trabajando en múltiples proyectos para mejorar mis habilidades técnicas.",
+    "subtitle": "Full Stack Software Developer",
+    "description": "Soy estudiante de ingeniería en sistemas de información especializado en el desarrollo de interfaces escalables, de alto rendimiento y centradas en el usuario. Trabajo end-to-end diseñando APIs, modelando lógica de negocio e integrando sistemas, construyendo soluciones robustas que reemplazan procesos manuales y generan impacto real en operaciones Fintech.",
     "downloadCV": "Descargar CV"
   },
   "aboutMe": {
     "title": "Acerca de mí",
-    "description": "¡Hola! Soy Carlos Diego Simon Hurtado y me encanta diseñar soluciones creativas y simples que resuelvan problematicas completas. Estudié durante 3 años la carrera de Arquitectura en la Universidad de Buenos Aires, la cual me permitió formarme con las bases del diseño grafico y desarrollar la capacidad de razonamiento abstracto. Despues de la cuarentena por el covid-19 el club donde entrenaba tenis de mesa requeria un producto distintivo de la competencia y desarrollé desde cero un modulo autoadministrable para inscripcion de torneos que permitia ver a todos los jugadores los listados de inscriptos, sembrado de zonas y llaves del torneo en tiempo real desde una pagina web. Desde ese entonces es utilizado y comercializado en diferentes clubes de CABA y el conurbano Bonaerense. Actualmente me encuentro estudiando Ingenieria en Sistemas de Información, terminando la certificación de Desarrollo Web Full Stack en CoderHouse y desarrollando diversos proyectos complejos para mejorar mis habilidades tecnicas en busca de superarme dia a dia.",
+    "description": "¡Hola! Soy Carlos Diego Simon Hurtado y me dedico a construir soluciones tecnológicas que generan impacto real en problemas complejos. <br/>Durante la pandemia por COVID-19 desarrollé un sistema web para la gestión de torneos de tenis de mesa, utilizado por distintos clubes para administrar inscripciones y visualizar competencias en tiempo real. Esa experiencia definió mi enfoque: crear productos útiles, automatizar procesos y construir soluciones escalables.<br/>Actualmente estudio Ingeniería en Sistemas de Información y trabajo desarrollando sistemas backend, integraciones y automatización de procesos en entornos complejos, principalmente dentro del dominio fintech, donde la consistencia, trazabilidad y escalabilidad son fundamentales.<br/>A nivel técnico, trabajo sobre arquitecturas basadas en APIs utilizando Node.js y Java/Spring, diseñando lógica de negocio, integraciones con servicios externos y procesamiento de datos. Además, incorporo modelos de lenguaje (LLMs) como parte del tooling de desarrollo para generación de código, testing, debugging, documentación y análisis de información.",
     "skills": "Lenguajes, Librerías, Frameworks & Tools"
   },
   "experience": {
     "title": "Experiencia",
     "items": [
       {
-        "name": "Frontend Software Developer",
+        "name": "FullStack Software Developer",
+        "company": "Evergreen Line",
+        "date": "Febrero 2023 - Actualidad",
+        "description": "Desarrollo y mantenimiento de las conexiones cruciales entre el sistema de facturación interno, la sede central en Taipéi y las regulaciones de ARCA en Argentina. A diario, me enfrento a desafíos de integración que implican la transmisión de datos precisos y seguros, garantizando la conformidad con las disposiciones legales y fiscales.",
+        "bgcolor": "#232B69"
+      },
+      {
+        "name": "FullStack Software Developer",
         "company": "Autónomo",
-        "date": "Febrero 2021 - junio 2022",
+        "date": "Mayo 2020 - enero 2024",
         "description": "Implementación de módulos autoadministrables con React y Google App Scripts con alto tráfico de usuarios. Análisis de requerimientos, planificación y mantenimiento de software, según las necesidades del cliente.",
         "bgcolor": "red"
       },
       {
-        "name": "Backend Software Developer",
+        "name": "Software Developer",
         "company": "MasterSoft",
         "date": "Junio - diciembre 2017",
         "description": "Mejoras de rendimiento en los módulos de acceso a la base de datos del software de administración Sperta, resolución de incidencias, documentación y relevamientos de informes.",
@@ -63,7 +70,7 @@
   },
   "contact": {
     "title": "Contacto",
-    "message": "👉 Si estás en búsqueda de un Frontend Developer con amplio conocimiento tanto de Back End como de diseño y sus implementaciones en el desarrollo web entonces te invito a contactarme por mis redes sociales o a través de mi mail",
+    "message": "👉 Si estás en búsqueda de un Software Developer | Full Stack (Frontend & Backend) con amplio conocimiento tanto de Back End como de diseño y sus implementaciones en el desarrollo web entonces te invito a contactarme por mis redes sociales o a través de mi mail",
     "email": "csimonhurtado@gmail.com"
   }
 }

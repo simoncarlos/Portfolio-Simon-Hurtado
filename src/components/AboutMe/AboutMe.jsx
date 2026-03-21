@@ -8,7 +8,7 @@ import useSkills from "../../utils/useSkills";
 import { AboutMeKnowledge } from "../StyledComponents/AboutMe/AboutMeKnowledge";
 import { AboutMeKnowledgeContainer } from "../StyledComponents/AboutMe/AboutMeKnowledgeContainer";
 import { GoTriangleRight } from "react-icons/go"
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 
 const AboutMe = () => {
@@ -21,7 +21,7 @@ const AboutMe = () => {
                 <article className="aboutMeDescription">
                     <Title>{t("aboutMe.title")}</Title>
                     <Text>
-                        {t("aboutMe.description")}
+                        <Trans i18nKey="aboutMe.description" components={{ br: <br /> }} />
                     </Text>
                 </article>
                 <AboutMeProfileContainer></AboutMeProfileContainer>

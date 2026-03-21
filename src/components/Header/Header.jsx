@@ -14,7 +14,7 @@ import { FiGithub } from "react-icons/fi";
 import { useLayoutEffect } from "react";
 import HeaderAnimation from "../HeaderAnimation/HeaderAnimation";
 import gsap from "gsap";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 const Header = () => {
     const {t} = useTranslation();
@@ -107,9 +107,9 @@ const Header = () => {
                 <Title className="apeared-title">{t("header.name")}</Title>
                 <Subtitle className="apeared-subtitle" size="1.6rem" >{t("header.subtitle")}</Subtitle>
                 <Text className="apeared-text">
-                    {t("header.description")}
+                    <Trans i18nKey="header.description" components={{ br: <br /> }} />
                 </Text>
-                <Button className="apeared-button" href="https://drive.google.com/file/d/195IbDHGcKAzY13uQZOZ_-HIkYa96EMPH/view?usp=sharing" target="_blank" rel="noreferrer">
+                <Button className="apeared-button" href="https://drive.google.com/file/d/11zsdH2OY3Nfx82S-r_6lvVBzjzoRnQHO/view" target="_blank" rel="noreferrer">
                         {t("header.downloadCV")}   
                 </Button>
             </article>

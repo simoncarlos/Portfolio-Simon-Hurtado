@@ -5,7 +5,7 @@ import { Button } from "../StyledComponents/Button";
 import { RiLinkedinFill } from "react-icons/ri";
 import { GrMailOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -14,7 +14,9 @@ const Contact = () => {
         <ContactContainer id="contact">
             <Title>{t("contact.title")}</Title>
             <Text>
-            {t("contact.message")} {t("contact.email")}
+            <Trans i18nKey="contact.message" components={{ br: <br /> }} />
+            <br />
+            <strong>{t("contact.email")}</strong>
             </Text>
             <div className="social-container">
                 <div>

@@ -9,29 +9,36 @@
   "header": {
     "greeting": "Hi! My name is",
     "name": "Carlos Diego Simon Hurtado",
-    "subtitle": "Front-End Software Developer",
-    "description": "I am a student of Information Systems Engineering specialized in the design and construction of interactive web applications with an exceptional user experience. Currently I am working on multiple projects to improve my technical skills.",
+    "subtitle": "Full Stack Software Developer",
+    "description": "I am an information systems engineering student specializing in the development of scalable, high-performance, user-centered interfaces. I work end-to-end on designing APIs, modeling business logic, and integrating systems, building robust solutions that replace manual processes and have a real impact on Fintech operations.",
     "downloadCV": "Download Resume"
   },
   "aboutMe": {
     "title": "About Me",
-    "description": "Hello! I am Carlos Diego Simon Hurtado and I love designing creative and simple solutions that solve complete problems. I studied Architecture for 3 years at the University of Buenos Aires, which allowed me to train in the basics of graphic design and develop abstract reasoning skills. After the quarantine due to covid-19, the table tennis club where I trained required a distinctive product from the competition and I developed from scratch a self-administering module for tournament registration that allowed all players to see the list of registered players, zone seeding and tournament brackets in real time from a website. Since then it is used and marketed in different clubs in CABA and the Buenos Aires suburbs. Currently I am studying Information Systems Engineering, finishing the Full Stack Web Development certification at CoderHouse and developing various complex projects to improve my technical skills in search of overcoming myself day by day.",
+    "description": "Hello! My name is Carlos Diego Simon Hurtado, and I’m dedicated to building technological solutions that make a real impact on complex problems. <br/>During the COVID-19 pandemic, I developed a web-based system for managing table tennis tournaments, which was used by various clubs to handle registrations and view competitions in real time. That experience shaped my approach: creating useful products, automating processes, and building scalable solutions. <br/>I am currently studying Information Systems Engineering and work on developing backend systems, integrations, and process automation in complex environments, primarily within the fintech domain, where consistency, traceability, and scalability are essential. <br/>On the technical side, I work on API-based architectures using Node.js and Java/Spring, designing business logic, integrations with external services, and data processing. Additionally, I incorporate language models (LLMs) as part of my development tooling for code generation, testing, debugging, documentation, and data analysis.",
     "skills": "Languages, Libraries, Frameworks & Tools"
   },
   "experience": {
     "title": "Experience",
     "items": [
       {
+        "name": "FullStack Software Developer",
+        "company": "Evergreen Line",
+        "date": "February 2023 – Present",
+        "description": "Development and maintenance of critical connections between the internal billing system, the headquarters in Taipei, and the regulations of the tax authority in Argentina. On a daily basis, I tackle integration challenges that involve the secure transmission of accurate data, ensuring compliance with legal and tax regulations.",
+        "bgcolor": "#232B69"
+      },
+      {
         "name": "Frontend Software Developer",
         "company": "Freelance",
-        "date": "February 2021 - June 2022",
+        "date": "May 2020 – January 2024",
         "description": "Implementation of self-administered modules with React and Google App Scripts with high user traffic. Requirements analysis, planning and software maintenance, according to client needs.",
         "bgcolor": "red"
       },
       {
         "name": "Backend Software Developer",
         "company": "MasterSoft",
-        "date": "June - December 2017",
+        "date": "June – December 2017",
         "description": "Performance improvements in the database access modules of the Sperta management software, incident resolution, documentation and report surveys.",
         "bgcolor": "#ffc90a"
       }
@@ -63,7 +70,7 @@
   },
   "contact": {
     "title": "Contact",
-    "message": "👉 If you are looking for a Frontend Developer with extensive knowledge of both Back End and design and its implementations in web development, then I invite you to contact me through my social networks or through my email",
+    "message": "👉 If you're looking for a Software Developer | Full Stack (Frontend & Backend) with extensive knowledge of both back-end development and design, as well as their implementation in web development, please feel free to contact me via social media or email",
     "email": "csimonhurtado@gmail.com"
   }
 }
