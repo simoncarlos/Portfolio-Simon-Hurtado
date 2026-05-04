@@ -22,6 +22,7 @@
     "title": "Experiencia",
     "items": [
       {
+        "id": 54897625,
         "name": "FullStack Software Developer",
         "company": "Evergreen Line",
         "date": "Febrero 2023 - Actualidad",
@@ -29,6 +30,7 @@
         "bgcolor": "#232B69"
       },
       {
+        "id": 87592416,
         "name": "FullStack Software Developer",
         "company": "Autónomo",
         "date": "Mayo 2020 - enero 2024",
@@ -36,7 +38,8 @@
         "bgcolor": "red"
       },
       {
-        "name": "Software Developer",
+        "id": 34589712,
+        "name": "Backend Software Developer",
         "company": "MasterSoft",
         "date": "Junio - diciembre 2017",
         "description": "Mejoras de rendimiento en los módulos de acceso a la base de datos del software de administración Sperta, resolución de incidencias, documentación y relevamientos de informes.",

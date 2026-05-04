@@ -22,6 +22,7 @@
     "title": "Experience",
     "items": [
       {
+        "id": 54897625,
         "name": "FullStack Software Developer",
         "company": "Evergreen Line",
         "date": "February 2023 – Present",
@@ -29,13 +30,15 @@
         "bgcolor": "#232B69"
       },
       {
-        "name": "Frontend Software Developer",
+        "id": 87592416,
+        "name": "FullStack Software Developer",
         "company": "Freelance",
         "date": "May 2020 – January 2024",
         "description": "Implementation of self-administered modules with React and Google App Scripts with high user traffic. Requirements analysis, planning and software maintenance, according to client needs.",
         "bgcolor": "red"
       },
       {
+        "id": 34589712,
         "name": "Backend Software Developer",
         "company": "MasterSoft",
         "date": "June – December 2017",

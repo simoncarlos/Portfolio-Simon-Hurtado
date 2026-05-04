@@ -7,7 +7,7 @@ const ExperienceList = ( {data} ) => {
             {
                 (data || []).map( experience => {
                     return <ExperienceItem
-                        key={experience.name}
+                        key={experience.id}
                         title={experience.name}
                         company={experience.company}
                         date={experience.date}
